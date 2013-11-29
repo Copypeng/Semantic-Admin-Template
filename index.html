@@ -2,11 +2,15 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用户中心</title>
-    <link type="text/css" rel="stylesheet" href="resource/css/semantic.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/semantic.css" />
+    <script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+    <script>
+        !window.jQuery && document.write('<script src="resource/javascript/jquery.min.js"><\/script>')       
+    </script>
 </head>
 <body>
 <div id="header">
@@ -15,15 +19,15 @@
 		<div class="logo">
 			<a href="./">Yeelink</a>
 		</div>
-        <div class="ui text menu right-menu">
+        <div class="ui menu right-menu">
             <a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
             <div class="right menu">
                 <div class="ui dropdown item">
-                    Language <i class="dropdown icon"></i>
+                    <img src="resource/images/avatar.png">
+                    用户名 <i class="dropdown icon"></i>
                     <div class="menu">
-                        <a class="item">English</a>
-                        <a class="item">Russian</a>
-                        <a class="item">Spanish</a>
+                        <a class="item">账户信息</a>
+                        <a class="item">注销登录</a>
                     </div>
                 </div>
             </div>
@@ -32,8 +36,13 @@
 		<div class="shadow"></div>
     </div>
 </div>
-
-<script type="text/javascript" src="resource/javascript/semantic.min.js"></script>
-
+<script type="text/javascript" src="resource/javascript/semantic.js"></script>
+<script>
+    $('.ui.dropdown')
+    .dropdown({
+        on: 'hover'
+    })
+    ;
+</script>
 </body>
 </html>
