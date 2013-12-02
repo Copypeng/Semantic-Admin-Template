@@ -7,6 +7,11 @@ body {
     margin:0px;
     padding:0px;
 }
+ul,li{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
 #header {
 	min-width:1200px;
 	height:100px;
@@ -54,4 +59,9 @@ body {
     right: 8px;
     top: 20px;
     text-decoration:none;
+}
+#header .fixed .right-menu li{
+    display: inline-block;
+    margin-left: 6px;
+    position: relative;
 }

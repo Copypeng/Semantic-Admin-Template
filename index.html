@@ -7,35 +7,33 @@
     <title>用户中心</title>
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/semantic.css" />
-    <script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
-    <script>
-        !window.jQuery && document.write('<script src="resource/javascript/jquery.min.js"><\/script>')       
-    </script>
 </head>
 <body>
 <div id="header">
     <div class="inset fixed">
     	<div class="wraper">
-		<div class="logo">
-			<a href="./">Yeelink</a>
-		</div>
-        <div class="ui menu right-menu">
-            <a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
-            <div class="right menu">
-                <div class="ui dropdown item">
-                    <img src="resource/images/avatar.png">
-                    用户名 <i class="dropdown icon"></i>
-                    <div class="menu">
-                        <a class="item">账户信息</a>
-                        <a class="item">注销登录</a>
-                    </div>
-                </div>
+            <div class="logo">
+			 <a href="./">Yeelink</a>
             </div>
-        </div>
+            <div class="right-menu">
+                <ul>
+                    <li class="account">
+                        <img class="ui avatar image" src="resource/images/avatar-default.gif">
+                    </li>
+                    <li class="ui top left pointing dropdown">
+                        用户名<i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item"><i class="info icon"></i>账户信息</div>
+                            <div class="item"><i class="sign out icon"></i>注销登录</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 		</div>
 		<div class="shadow"></div>
     </div>
 </div>
+<script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="resource/javascript/semantic.js"></script>
 <script>
     $('.ui.dropdown')

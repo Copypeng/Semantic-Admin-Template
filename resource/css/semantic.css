@@ -8944,11 +8944,9 @@ img.ui.image {
 .ui.avatar.images img,
 .ui.avatar.image img,
 .ui.avatar.image {
-  margin-right: 0.5em;
   display: inline-block;
-  width: 2em;
-  height: 2em;
   border-radius: 500rem;
+  width:24px;
 }
 
 /*-------------------
