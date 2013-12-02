@@ -65,3 +65,6 @@ ul,li{
     margin-left: 6px;
     position: relative;
 }
+#header .fixed .right-menu .ui.dropdown{
+    top:2px;
+}
