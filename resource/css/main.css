@@ -12,6 +12,11 @@ ul,li{
     margin:0;
     padding:0;
 }
+a {
+	text-decoration:none;
+	color:#666;
+}
+/*header start*/
 #header {
 	min-width:1200px;
 	height:100px;
@@ -67,4 +72,105 @@ ul,li{
 }
 #header .fixed .right-menu .ui.dropdown{
     top:2px;
+}
+/*footer start*/
+/*footer start*/
+#footer {
+	min-width:1200px;
+}
+#copyrights {
+	background:#323232;
+	height:140px;
+}
+#copyrights .inset {
+	width:1100px;
+	margin:0 auto;
+	padding:20px 50px 0;
+	position:relative;
+}
+#copyrights .logo {
+	width:164px;
+	height:40px;
+	background:url(../images/logo_footer.png);
+	text-indent:-999em;
+}
+#copyrights p {
+	font-size:12px;
+	color:#a0a0a0;
+	line-height:24px;
+}
+#copyrights .fl {
+	float:left;
+}
+#copyrights .fr {
+	float:right;
+}
+#copyrights .searchbar {
+	display:inline-block;
+	border:3px solid #464646;
+	height:24px;
+	width:290px;
+	background:#666;
+	/*position:absolute;*/
+	bottom:0;
+	right:0;
+}
+#copyrights .searchbar input {
+	border:0;
+	outline:none;
+	height:24px;
+	background:none;
+	padding-left:4px;
+	width:220px;
+	float:left;
+}
+#copyrights .searchbar button {
+	border:0;
+	height:24px;
+	background:url(../images/icon_search.png) center center no-repeat;
+	background-color:#464646;
+	width:36px;
+	text-indent:-999em;
+	cursor:pointer;
+	float:right;
+}
+#copyrights .searchbar button:hover {
+	background-color:#535353;
+}
+#copyrights .searchbar button:active {
+	background-color:#8a8a8a;
+}
+#copyrights .nav {
+}
+#copyrights .nav li {
+	display:inline-block;
+	float:left;
+}
+#copyrights .nav li a {
+	color:#a0a0a0;
+	font-size:12px;
+	line-height:24px;
+	padding-left:16px;
+	background:url(../images/arrow-white-l2r.png) left center no-repeat;
+}
+#copyrights .medias {
+	position:absolute;
+	right:48px;
+	top:20px;
+}
+#copyrights .medias img {
+	border:0;
+    margin-top:4px;
+}
+#copyrights .medias li {
+	width:30px;
+	height:30px;
+	display:inline-block;
+	text-align:center;
+	vertical-align:center;
+	float:left;
+	margin-left:4px;
+}
+#copyrights .medias li.weibo {
+	background:#464646;
 }
