@@ -21,23 +21,34 @@
                     <li class="account">
                         <img class="ui avatar image" src="resource/images/avatar-default.gif">
                     </li>
-                    <li class="ui top right pointing dropdown">
-                        用户名<i class="dropdown icon"></i>
-                        <div class="menu">
-                            <a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
-                            <a class="item" href="#"><i class="info icon"></i>账户信息</a>
-                            <a class="item" href="#"><i class="sign out icon"></i>注销登录</a>
-                        </div>
+                    <li id="userName">
+                        欢迎，$用户名
                     </li>
                 </ul>
             </div>
 		</div>
-		<div class="shadow"></div>
     </div>
+	<!--the main nav-->
+	<div class="ui secondary pointing menu">
+  		<a class="active item">
+    		<i class="home icon"></i> 管理中心
+  		</a>
+  		<a class="item">
+    		<i class="sitemap icon"></i> 设备管理
+  		</a>
+  		<a class="item">
+    		<i class="user icon"></i> 账户管理
+  		</a>
+  		<div class="right menu">
+			<a class="item"><i class="reply mail icon"></i>返回首页</a>
+    		<a class="item"><i class="sign out icon"></i>注销登录</a>
+  		</div>
+	</div>
 </div>
 <!--the main content begin-->
 <div class="container">
 	<div class="ui grid">
+		<!--the sidenav-->
 		<div class="four wide column">
 			<div class="ui vertical pointing menu">
   				<a class="active item">
@@ -55,9 +66,19 @@
   				</div>
 			</div>
 		</div>
-	<div class="eight wide column">
+		<!--the content-->
+		<div class="twelve wide column">
+			<div class="segment">
+				<h3 class="ui dividing header">
+  					<i class="dashboard icon"></i>
+  					<div class="content">
+    					设备概要
+    				<div class="sub header">快速查看和编辑您的设备</div>
+  					</div>
+				</h3>
+			</div>
+		</div>
 	</div>
-</div>
 </div>
 <!--footer begin-->
 <div id="footer">
