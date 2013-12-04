@@ -68,6 +68,11 @@ a {
 #header .ui.menu{
 	margin:0;
 }
+#mainMenu {
+    width:1200px;
+	position:relative;
+	margin:0 auto;
+}
 /*footer start*/
 #footer {
 	min-width:1200px;
