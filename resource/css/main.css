@@ -3,7 +3,7 @@ body {
     font-size: 14px;
     line-height: 1.428571429;
     color: #333;
-    background-color: #fff;
+   	background: #FFF url(../images/bg-uniform.png);
     margin:0px;
     padding:0px;
 }
@@ -21,7 +21,6 @@ a {
 	min-width:1200px;
 	height:100px;
 	position:relative;
-	z-index:99;
 }
 #header .logo {
 	width:230px;
@@ -35,12 +34,12 @@ a {
 }
 #header .inset{
 	position:relative;
+	background: url(../images/navbar_bg.png) repeat-x;
 }
 #header .fixed {
 	width:100%;
 	min-width: 1200px;
 	z-index: 999;
-	background:url(../images/navbar_bg.png) top repeat-x;
 	height:60px;
 }
 #header .fixed .logo a {
@@ -54,12 +53,15 @@ a {
 #header .fixed .right-menu{
     position: absolute;
     right: 8px;
-    top: 20px;
-    text-decoration:none;
+	top:4px;
+}
+#header .fixed .right-menu ul{
+	padding: 16px 0;
+	background: #FFF url(../images/bg-uniform.png);
 }
 #header .fixed .right-menu li{
     display: inline-block;
-    margin-left: 6px;
+    margin:0 6px;
     position: relative;
 }
 #userName{

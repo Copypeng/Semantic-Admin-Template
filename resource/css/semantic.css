@@ -2177,7 +2177,7 @@ body > .ui.grid {
 .ui.secondary.pointing.menu > .menu > .item,
 .ui.secondary.pointing.menu > .item {
   margin: 0em 0em -3px;
-  padding: 0.6em 0.95em;
+  padding: 0.4em 0.95em;
   border-bottom: 3px solid rgba(0, 0, 0, 0);
   border-radius: 0em;
   -webkit-transition: color 0.2s;
