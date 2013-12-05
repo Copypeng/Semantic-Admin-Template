@@ -2174,11 +2174,6 @@ body > .ui.grid {
 /*---------------------
    Secondary Pointing
 -----------------------*/
-
-.ui.secondary.pointing.menu {
-  border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-}
-
 .ui.secondary.pointing.menu > .menu > .item,
 .ui.secondary.pointing.menu > .item {
   margin: 0em 0em -3px;

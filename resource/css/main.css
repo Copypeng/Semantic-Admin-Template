@@ -68,7 +68,10 @@ a {
 #header .ui.menu{
 	margin:0;
 }
-#mainMenu {
+#mainMenu{
+	border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+}
+#mainMenu .wraper{
     width:1200px;
 	position:relative;
 	margin:0 auto;
