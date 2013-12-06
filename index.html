@@ -60,29 +60,38 @@
 				<h3 class="ui dividing header">
   					<i class="large dashboard icon"></i>
   					<div class="content">
-    					设备概要
-    				<div class="sub header">快速查看和编辑您的设备</div>
+    					管理中心
+    				<div class="sub header">快速查看和编辑</div>
   					</div>
 				</h3>
 			</div>
 		</div>
-		<div class="ui small icon message" id="showApiKey">
+		<div class="ui small message" id="showApiKey">
 			<div class="content">
 				<div class="ui form segment">
 					<div class="inline field">
-    					<label>您的API Key:</label>
+    					<label><h4><i class="key large icon"></i>您的API Key:</h4></label>
     					<input type="text" value="793jIEGJjkjkljfUI3JRTJOIO" readonly="readonly" id="apiKey">
 						<div class="ui buttons">
   							<a class="ui small positive button" id="copy-apiKey" href="#">复制</a>
   							<a class="ui small button">管理</a>
 						</div>
+						<a class="red button">我的所有设备</a>
   					</div>
     			</div>
 			</div>
-			<i class="key icon"></i>
 		</div>
 	<!--device list-->
-		<div class="ui three column grid" id="deviceList">
+	<div class="ui three column grid" id="deviceList">
+		<div class="row">
+			<div class="column">
+				<div class="ui blue segment">
+					<a class="content" href="#">
+						<h4 class="newDevice"><i class="huge add icon"></i>
+						添加新设备</h4>
+					</a>
+				</div>
+			</div>
 			<div class="column">
 				<div class="ui blue segment">
 					<a href="#" class="content">
@@ -96,22 +105,28 @@
 			<div class="column">
 				<div class="ui blue segment">
 					<a class="content" href="#">
-						<h4 class="deviceName">设备名01</h4>
-						<p class="deviceId">设备ID：234</p>
+						<h4 class="deviceName">设备名02</h4>
+						<p class="deviceId">设备ID：4354</p>
 						<p class="deviceDescription">这里是设备描述。</p>
 						<P>设备状态：<span class="deviceStatusOk"></span></P>
 					</a>
 				</div>
 			</div>
+		</div>
+		<div class="row">
 			<div class="column">
 				<div class="ui blue segment">
 					<a class="content" href="#">
-						<h4 class="newDevice"><i class="huge add icon"></i>添加新设备</h4>
+						<h4 class="deviceName">设备名03</h4>
+						<p class="deviceId">设备ID：344</p>
+						<p class="deviceDescription">这里是设备描述。</p>
+						<P>设备状态：<span class="deviceStatusOk"></span></P>
 					</a>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 <!--footer begin-->
 <footer>
@@ -131,7 +146,7 @@
 				</div>
                 <div class="medias">
 					<ul>
-						<li class="weibo"><a href="http://weibo.com/yeelink2012" target="_blank"><img src="/resource/images/icon_weibo.png"/></a></li>
+						<li class="weibo"><a href="http://weibo.com/yeelink2012" target="_blank"><img src="./resource/images/icon_weibo.png"/></a></li>
 					</ul>
 				</div>
 				<div class="nav">
