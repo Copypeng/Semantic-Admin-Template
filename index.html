@@ -71,10 +71,10 @@
 				<div class="ui form segment">
 					<div class="inline field">
     					<label>您的API Key:</label>
-    					<input type="text" value="793jIEGJjkjkljfUI3JRTJOIO" readonly="readonly">
+    					<input type="text" value="793jIEGJjkjkljfUI3JRTJOIO" readonly="readonly" id="apiKey">
 						<div class="ui buttons">
-  							<div class="ui small positive button">复制</div>
-  							<div class="ui small button">管理</div>
+  							<a class="ui small positive button" id="copy-apiKey" href="#">复制</a>
+  							<a class="ui small button">管理</a>
 						</div>
   					</div>
     			</div>
@@ -150,12 +150,14 @@
 
 <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="resource/javascript/semantic.js"></script>
+<script type="text/javascript" src="resource/javascript/jquery.zclip.min.js"></script>
 <script>
-    $('.ui.dropdown')
-    .dropdown({
-        on: 'hover'
-    })
-    ;
+	$(document).ready(function(){
+		$('a#copy-apiKey').zclip({
+			path:'resource/javascript/ZeroClipboard.swf',
+			copy:function(){return $('input#apiKey').val();}
+		});
+	});
 </script>
 </body>
 </html>
