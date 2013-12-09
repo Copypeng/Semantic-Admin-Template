@@ -98,6 +98,9 @@ a {
 	box-shadow:none;
 	-webkit-box-shadow:none;
 }
+#deviceQuickButton {
+	float:right;
+}
 /*device list*/
 #deviceList{
 	padding-top:2rem;
