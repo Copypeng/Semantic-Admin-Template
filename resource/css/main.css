@@ -23,7 +23,7 @@ a {
 	min-height:100%;
 	width:100%;
 	position:relative;
-	background: #FFF url(../images/bg-uniform.png);
+	background: #fff;
 	box-shadow: 0px 4px 15px #181818;
 }
 /*header start*/
@@ -45,12 +45,12 @@ a {
 }
 #header .inset{
 	position:relative;
-	background: url(../images/navbar_bg.png) repeat-x;
 }
 #header .fixed {
 	width:100%;
 	min-width: 1200px;
 	height:60px;
+	background: url(../images/navbar_bg.png) top repeat-x;
 }
 #header .fixed .logo a {
 	height:60px;
@@ -64,10 +64,11 @@ a {
     position: absolute;
     right: 8px;
 	top:4px;
+	background:#fff;
+	padding:0 12px;
 }
 #header .fixed .right-menu ul{
 	padding: 16px 0;
-	background: #FFF url(../images/bg-uniform.png);
 }
 #header .fixed .right-menu li{
     display: inline-block;
@@ -191,7 +192,6 @@ footer {
 	height:24px;
 	width:290px;
 	background:#666;
-	/*position:absolute;*/
 	bottom:0;
 	right:0;
 }

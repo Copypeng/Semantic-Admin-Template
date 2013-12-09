@@ -2229,7 +2229,7 @@ body > .ui.grid {
 .ui.secondary.pointing.menu > .menu > .item.active,
 .ui.secondary.pointing.menu > .item.active {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
