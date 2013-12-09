@@ -88,6 +88,12 @@ a {
 	position:relative;
 	margin:0 auto;
 }
+#mainMenu .wraper .menu.right a.item{
+	opacity:0.6;
+}
+#mainMenu .wraper .menu.right a.item:hover{
+	opacity:0.8;
+}
 /*main content*/
 .pageHeader {
 	padding:2rem 0;
