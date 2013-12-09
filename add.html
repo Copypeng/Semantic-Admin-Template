@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户中心</title>
+    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/semantic.css" />
+</head>
+<body>
+<div class="page">
+<!--header begin-->
+<div id="header">
+    <div class="inset fixed">
+    	<div class="wraper">
+            <div class="logo">
+			 <a href="./">Yeelink</a>
+            </div>
+            <div class="right-menu">
+                <ul>
+                    <li class="account">
+                        <img class="ui avatar image" src="resource/images/avatar-default.gif">
+                    </li>
+                    <li id="userName">
+                        欢迎，$用户名
+                    </li>
+                </ul>
+            </div>
+		</div>
+    </div>
+	<!--the main nav-->
+<div id="mainMenu">
+	<div class="wraper">
+		<div class="ui secondary pointing menu">
+  			<a class="active item" href="./">
+    			<i class="home icon"></i> 管理中心
+  			</a>
+  			<a class="item">
+				<i class="sitemap icon"></i> 设备管理
+  			</a>
+  			<a class="item">
+				<i class="user icon"></i> 账户管理
+  			</a>
+  			<div class="right menu">
+				<a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
+				<a class="item" href="./logout"><i class="sign out icon"></i>注销登录</a>
+  			</div>
+		</div>
+ 	</div>
+</div>
+
+</div>
+
+<!--the main content begin-->
+	<div class="container">
+	<!--the content-->
+		<div class="ui grid">
+			<div class="four wide column">
+				<div class="ui vertical pointing menu">
+  					<a class="active item">
+    					<i class="add icon"></i> 绑定新设备
+  					</a>
+  					<a class="item">
+    					<i class="settings icon"></i> 我的设备
+  					</a>
+  					<a class="item">
+    					<i class="terminal icon"></i> 设备动作
+  					</a>
+				</div>
+			</div>
+			<div class="twelve wide column">
+				<div class="pageHeader">
+					<div class="segment">
+						<h3 class="ui dividing header">
+  							<i class="large add icon"></i>
+  							<div class="content">
+    						绑定新设备
+  							</div>
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer begin-->
+<footer>
+	<div id="copyrights">
+		<div class="inset">
+			<div class="fl">
+				<div class="logo"></div>
+				<p>&copy; 2020 青岛亿联客信息技术有限公司, 版权所有<br />
+<a href="http://www.miibeian.gov.cn" target="_blank">鲁ICP备12022271号</a></p>
+			</div>
+			<div class="fr">
+				<div class="searchbar">
+					<form method="get" action="/devices">
+						<input name="keyword" type="text" placeholder="搜索设备" />
+						<button type="submit">搜索设备</button>
+					</form>
+				</div>
+                <div class="medias">
+					<ul>
+						<li class="weibo"><a href="http://weibo.com/yeelink2012" target="_blank"><img src="./resource/images/icon_weibo.png"/></a></li>
+					</ul>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="/developer/doc/2">使用条款</a></li>
+						<li><a href="/developer/doc/16">常见问题</a></li>
+						<li><a href="/info/contact">联系我们</a></li>
+                        <li><a href="http://bbs.yeelink.net" target="_blank">开发者论坛</a></li>
+						<li><a href="http://blog.yeelink.net/?p=504" target="_blank">工作机会</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="resource/javascript/semantic.js"></script>
+</body>
+</html>
