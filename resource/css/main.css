@@ -95,8 +95,8 @@ a {
 	opacity:0.8;
 }
 /*main content*/
-.pageHeader {
-	padding:2rem 0;
+.pageHeader .verticalMenu{
+	padding:1rem 0;
 }
 /*show api key*/
 #showApiKey .segment{

@@ -215,7 +215,6 @@
 .ui.form textarea {
   line-height: 1.33;
   min-height: 8em;
-  height: 12em;
   max-height: 24em;
   resize: vertical;
 }
@@ -6720,7 +6719,12 @@ i.massive.basic.icon {
   line-height: 1.2;
   color: rgba(0, 0, 0, 0.5);
 }
-
+.ui.header .sub.header a {
+	color:#6ECFF5!important;
+}
+.ui.header .sub.header a:hover, .ui.header .sub.header a:focus, .ui.header .sub.header a:active{
+	text-decoration:underline;
+}
 .ui.header .icon {
   display: table-cell;
   vertical-align: middle;

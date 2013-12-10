@@ -33,10 +33,10 @@
 <div id="mainMenu">
 	<div class="wraper">
 		<div class="ui secondary pointing menu">
-  			<a class="active item" href="./">
-    			<i class="home icon"></i> 管理中心
+  			<a class="item" href="./">
+    			<i class="home icon"></i> 管理首页
   			</a>
-  			<a class="item">
+  			<a class="active item">
 				<i class="sitemap icon"></i> 设备管理
   			</a>
   			<a class="item">
@@ -56,33 +56,91 @@
 	<div class="container">
 	<!--the content-->
 		<div class="ui grid">
+			<!--the vertical menu-->
 			<div class="four wide column">
-				<div class="ui vertical pointing menu">
-  					<a class="active item">
-    					<i class="add icon"></i> 绑定新设备
-  					</a>
-  					<a class="item">
-    					<i class="settings icon"></i> 我的设备
-  					</a>
-  					<a class="item">
-    					<i class="terminal icon"></i> 设备动作
-  					</a>
+				<div class="verticalMenu">
+					<div class="ui vertical pointing menu">
+  						<a class="active teal item">
+							<i class="add icon"></i> 绑定新设备
+  						</a>
+  						<a class="item">
+    						<i class="settings icon"></i> 我的设备
+  						</a>
+  						<a class="item">
+							<i class="terminal icon"></i> 设备动作
+  						</a>
+					</div>
 				</div>
 			</div>
+			<!--the newDevice form-->
 			<div class="twelve wide column">
 				<div class="pageHeader">
 					<div class="segment">
 						<h3 class="ui dividing header">
   							<i class="large add icon"></i>
   							<div class="content">
-    						绑定新设备
+    							绑定新设备
+    							<div class="sub header">将您的设备连接到云端</div>
   							</div>
 						</h3>
 					</div>
 				</div>
+				<div class="ui form segment">
+					<form name="form" action="/user/new_device" method="post">
+						<div class="inline field">
+							<label>设备来源</label>
+							<div class="ui dropdown selection">
+      							<input type="hidden" name="gender" value="1">
+      							<div class="default text">自备设备</div>
+      							<i class="dropdown icon"></i>
+      							<div class="menu">
+        							<div class="item active" data-value="自备设备" value="1">自备设备</div>
+        							<div class="item" data-value="Yeelink设备" value="0">Yeelink设备</div>
+      							</div>
+    						</div>
+						</div>
+						<div class="two fields">
+							<div class="field">
+								<label>设备名</label>
+								<input type="text" placeholder="给您的设备起个名,您容易记住就行，30个字符内……">
+							</div>
+							<div class="field">
+								<label>标签（tags）</label>
+								<input type="text" placeholder="各关键词间用逗号(,)分隔">
+							</div>
+						</div>
+						<div class="two fields">
+							<div class="field">
+								<label>设备ID码</label>
+								<input type="text" placeholder="见设备标签">
+							</div>
+							<div class="field">
+								<label>设备秘钥</label>
+								<input type="text" placeholder="请从随机卡片上找到">
+							</div>
+						</div>
+						<div class="field">
+							<label>描述</label>
+							<textarea placeholder="不超过30个字符……"></textarea>
+						</div>
+						<div class="inline field">
+							<label>地理位置名称</label>
+							<div class="ui dropdown selection">
+      							<input type="hidden" name="gender" value="1">
+      							<div class="default text">……</div>
+      							<i class="dropdown icon"></i>
+      							<div class="menu">
+        							<div class="item active" data-value="" value="">……</div>
+        							<div class="item" data-value="" value="">……</div>
+      							</div>
+    						</div>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
+</div>
 </div>
 <!--footer begin-->
 <footer>
@@ -121,5 +179,10 @@
 
 <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="resource/javascript/framework.js"></script>
+<script>
+$('.ui.selection.dropdown')
+  .dropdown()
+;
+</script>
 </body>
 </html>
