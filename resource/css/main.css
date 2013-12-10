@@ -2,9 +2,8 @@ html{
 	height:100%;
 }
 body {
-    font-family: "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei","Arial", sans-serif;
-    font-size: 14px;
-    line-height: 1.428571429;
+    font: 14px 'Helvetica Neue','Microsoft YaHei','Hiragino Sans GB','WenQuanYi Micro Hei',Helvetica,Arial,Sans-serif;
+    line-height: 1.6;
     color: #333;
     margin:0px;
     padding:0px;
@@ -104,6 +103,9 @@ a {
 	background:none;
 	box-shadow:none;
 	-webkit-box-shadow:none;
+}
+#showApiKey .segment label{
+	font-size:16px;
 }
 #deviceQuickButton {
 	float:right;

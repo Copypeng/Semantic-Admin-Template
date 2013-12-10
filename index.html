@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用户中心</title>
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
-    <link type="text/css" rel="stylesheet" href="resource/css/semantic.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
 </head>
 <body>
 <div class="page">
@@ -70,7 +70,7 @@
 			<div class="content">
 				<div class="ui form segment">
 					<div class="inline field">
-    					<label><h4><i class="key large icon"></i>您的API Key:</h4></label>
+    					<label style="font-size:16px;"><i class="key large icon"></i> 您的API Key : </label>
     					<input type="text" value="793jIEGJjkjkljfUI3JRTJOIO" readonly="readonly" id="apiKey">
 						<div class="ui buttons">
   							<a class="ui small positive button" id="copy-apiKey" href="#">复制</a>
@@ -87,14 +87,6 @@
 	<!--device list-->
 	<div class="ui three column grid" id="deviceList">
 		<div class="row">
-			<div class="column">
-				<div class="ui blue segment">
-					<a class="content" href="#">
-						<h4 class="newDevice"><i class="huge add icon"></i>
-						添加新设备</h4>
-					</a>
-				</div>
-			</div>
 			<div class="column">
 				<div class="ui blue segment">
 					<a href="#" class="content">
@@ -115,8 +107,6 @@
 					</a>
 				</div>
 			</div>
-		</div>
-		<div class="row">
 			<div class="column">
 				<div class="ui blue segment">
 					<a class="content" href="#">
@@ -124,6 +114,16 @@
 						<p class="deviceId">设备ID：344</p>
 						<p class="deviceDescription">这里是设备描述。</p>
 						<P>设备状态：<span class="deviceStatusOk"></span></P>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="column">
+				<div class="ui blue segment">
+					<a class="content" href="#">
+						<h4 class="newDevice"><i class="huge add icon"></i>
+						添加新设备</h4>
 					</a>
 				</div>
 			</div>
@@ -167,7 +167,7 @@
 </footer>
 
 <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
-<script type="text/javascript" src="resource/javascript/semantic.js"></script>
+<script type="text/javascript" src="resource/javascript/framework.js"></script>
 <script type="text/javascript" src="resource/javascript/jquery.zclip.min.js"></script>
 <script>
 	$(document).ready(function(){
