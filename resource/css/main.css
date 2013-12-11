@@ -29,74 +29,7 @@ a {
 	padding-bottom:1rem;
 }
 /*header start*/
-#header {
-	min-width:1200px;
-	height:100px;
-	position:relative;
-	margin-bottom:24px;
-}
-#header .logo {
-	width:230px;
-	background:url(../images/logo.png) left center no-repeat;
-}
-#header .logo a {
-	display:block;
-	width:230px;
-	height:100px;
-	text-indent:-999em;
-}
-#header .inset{
-	position:relative;
-}
-#header .fixed {
-	width:100%;
-	min-width: 1200px;
-	height:60px;
-	background: url(../images/navbar_bg.png) top repeat-x;
-}
-#header .fixed .logo a {
-	height:60px;
-}
-#header .inset .wraper{
-	width:1200px;
-	position:relative;
-	margin:0 auto;
-}
-#header .fixed .right-menu{
-    position: absolute;
-    right: 8px;
-	top:4px;
-	background:#fff;
-	padding:0 12px;
-}
-#header .fixed .right-menu ul{
-	padding: 16px 0;
-}
-#header .fixed .right-menu li{
-    display: inline-block;
-    margin:0 6px;
-    position: relative;
-}
-#userName{
-    top:2px;
-}
-#header .ui.menu{
-	margin:0;
-}
-#mainMenu{
-	border-bottom: 3px solid rgba(0, 0, 0, 0.1);
-}
-#mainMenu .wraper{
-    width:1200px;
-	position:relative;
-	margin:0 auto;
-}
-#mainMenu .wraper .menu.right a.item{
-	opacity:0.6;
-}
-#mainMenu .wraper .menu.right a.item:hover{
-	opacity:0.8;
-}
+
 /*main content*/
 .pageHeader, .verticalMenu{
 	padding:1rem 0;

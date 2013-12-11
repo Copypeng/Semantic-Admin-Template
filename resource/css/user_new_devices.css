@@ -1,0 +1,8 @@
+.locmap {
+	height: 180px;
+	background-color: #CCC;
+	margin: 5px auto 5px auto;
+	text-align: center;
+	width: 100% !important;
+	border: #CCC 1px solid;
+}

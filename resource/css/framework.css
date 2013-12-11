@@ -616,7 +616,6 @@
   margin-top: 0em;
   margin-bottom: 0em;
   vertical-align: middle;
-  font-size: 1em;
 }
 
 .ui.form .inline.fields .field > input,
@@ -2550,8 +2549,8 @@ body > .ui.grid {
 
 .ui.menu .teal.active.item,
 .ui.teal.menu .active.item {
-  border-color: #00B5AD !important;
-  color: #00B5AD !important;
+  border-color: #178EFE !important;
+  color: #178EFE !important;
 }
 
 /*--------------
