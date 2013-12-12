@@ -22,14 +22,33 @@ a {
 .page{
 	min-height:100%;
 	width:100%;
-	position:relative;
 	background: #fff;
 	box-shadow: 0px 4px 15px #181818;
 	padding-bottom:16px;
 	padding-bottom:1rem;
 }
 /*header start*/
-
+header{
+	position:relative;
+	height:72px;
+}
+#logo{
+	float:left;
+	width:180px;
+	height:72px;
+	background: url(../images/logo.png) left center no-repeat;
+}
+#logo a{
+	display:block;
+	width:180px;
+	height:72px;
+	text-indent: -999em;
+}
+header .user{
+	display:inline;
+	float:right;
+	margin-top:22px;
+}
 /*main content*/
 .pageHeader, .verticalMenu{
 	padding:1rem 0;
@@ -92,7 +111,6 @@ footer {
 	z-index: -20;
 }
 #copyrights {
-	min-width:1200px;
 	margin:0 auto;
 	height:140px;
 	position:fixed;
@@ -102,7 +120,6 @@ footer {
 	z-index: -15;
 }
 #copyrights .inset {
-	width:1100px;
 	margin:0 auto;
 	padding:20px 50px 0;
 	position:relative;
@@ -120,75 +137,4 @@ footer {
 }
 #copyrights .fl {
 	float:left;
-}
-#copyrights .fr {
-	float:right;
-}
-#copyrights .searchbar {
-	display:inline-block;
-	border:3px solid #464646;
-	height:24px;
-	width:290px;
-	background:#666;
-	bottom:0;
-	right:0;
-}
-#copyrights .searchbar input {
-	border:0;
-	outline:none;
-	height:24px;
-	background:none;
-	padding-left:4px;
-	width:220px;
-	float:left;
-}
-#copyrights .searchbar button {
-	border:0;
-	height:24px;
-	background:url(../images/icon_search.png) center center no-repeat;
-	background-color:#464646;
-	width:36px;
-	text-indent:-999em;
-	cursor:pointer;
-	float:right;
-}
-#copyrights .searchbar button:hover {
-	background-color:#535353;
-}
-#copyrights .searchbar button:active {
-	background-color:#8a8a8a;
-}
-#copyrights .nav {
-}
-#copyrights .nav li {
-	display:inline-block;
-	float:left;
-}
-#copyrights .nav li a {
-	color:#a0a0a0;
-	font-size:12px;
-	line-height:24px;
-	padding-left:16px;
-	background:url(../images/arrow-white-l2r.png) left center no-repeat;
-}
-#copyrights .medias {
-	position:absolute;
-	right:48px;
-	top:20px;
-}
-#copyrights .medias img {
-	border:0;
-    margin-top:4px;
-}
-#copyrights .medias li {
-	width:30px;
-	height:30px;
-	display:inline-block;
-	text-align:center;
-	vertical-align:center;
-	float:left;
-	margin-left:4px;
-}
-#copyrights .medias li.weibo {
-	background:#464646;
 }

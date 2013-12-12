@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>账户设置——Yeelink</title>
+    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
+</head>
+<body>
+<div class="page">
+<!--header begin-->
+<header>
+	<div class="bigcontainer">
+		<div id="logo">
+			<a href="./">yeelink用户中心</a>
+		</div>
+		<div class="user">
+			<div class="ui inline labeled icon top right pointing dropdown">
+			<img class="ui avatar image" src="resource/images/avatar-default.gif">
+			欢迎，$用户名
+			<i class="dropdown icon"></i>
+				<div class="menu">
+					<a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
+					<a class="item" href="/user/logout"><i class="sign out icon"></i>注销登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- the main menu-->
+<div class="ui teal inverted menu">
+	<div class="bigcontainer">
+		<div class="right menu">
+			<a class="item" href="./index.html"><i class="home icon"></i>管理首页</a>
+			<a class="item"><i class="sitemap icon"></i>设备</a>
+			<a class="active item" href="user_profile.html"><i class="info icon"></i>账户</a>
+		</div>
+	</div>
+</div>
+<!--the main content begin-->
+	<div class="container">
+	<!--the content-->
+		<div class="ui grid">
+			<!--the vertical menu-->
+			<div class="four wide column">
+				<div class="verticalMenu">
+					<div class="ui vertical pointing menu fluid">
+  						<a class="active teal item">
+							<i class="edit icon"></i>账户设置
+  						</a>
+  						<a class="item">
+    						<i class="lock icon"></i> 修改密码
+  						</a>
+					</div>
+				</div>
+			</div>
+			<div class="twelve wide column">
+				<div class="pageHeader">
+					<div class="segment">
+						<h3 class="ui dividing header">
+  							<i class="large edit icon"></i>
+  							<div class="content">
+    							账户设置
+    							<div class="sub header">可以生成新的API Key</div>
+  							</div>
+						</h3>
+					</div>
+				</div>
+				<!--the user_profile form-->
+				<div class="ui form vertical segment">
+					<form action="/ueser/user_profile" name="form" method="post">
+						<div class="two fields">
+							<div class="field">
+								<label>用户名</label>
+								<div class="ui left labeled icon input">
+									<input type="text" id="username" name="username" value="用户名" disabled="disabled">
+									<i class="user icon"></i>
+									<div class="ui corner label">
+									</div>
+								</div>
+							</div>
+							<div class="field">
+								<label>电子邮箱</label>
+								<div class="ui left labeled icon input">
+									<input type="text" id="useremail" name="useremail" value="example@yeelink.net">
+									<i class="mail icon"></i>
+								</div>
+							</div>
+						</div>
+						<div class="two fields">
+							<div class="field">
+								<label>API Key</label>
+								<div class="ui left labeled icon input">
+									<input class="text" id="api key" value="8e8fd8cad81ddef1179c9b690d0ba90a" readonly>
+									<i class="key icon"></i>
+								</div>
+							</div>
+							<div class="field">
+								<label>&nbsp;</label>
+								<a class="ui red button">重新生成</a>
+							</div>
+						</div>
+						<div class="field">
+							<label>关 于</label>
+							<textarea></textarea>
+						</div>
+						<input class="ui blue submit button" type="submit" value="保存">
+						<input class="ui basic small button" type="reset" value="取消">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer begin-->
+<footer>
+	<div id="copyrights">
+		<div class="inset">
+			<div class="bigcontainer">
+				<div class="fl">
+					<div class="logo"></div>
+					<p>&copy; 2020 青岛亿联客信息技术有限公司, 版权所有<br />
+<a href="http://www.miibeian.gov.cn" target="_blank">鲁ICP备12022271号</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="resource/javascript/framework.js"></script>
+<script type="text/javascript">
+	$('.ui.dropdown')
+	.dropdown();
+</script>
+</body>
+</html>

@@ -4,24 +4,25 @@
   margin-right: auto;
   margin-left: auto;
 }
-
-.container:before,
-.container:after {
+.bigcontainer{
+	margin:0 auto;
+}
+.bigcontainer:before,.container:before,
+.bigcontainer:after, .container:after {
   display: table;
   content: " ";
 }
-
-.container:after {
+.bigcontainer:after, .container:after {
   clear: both;
 }
 
-.container:before,
-.container:after {
+.bigcontainer:before, .container:before,
+.bigcontainer:after, .container:after {
   display: table;
   content: " ";
 }
 
-.container:after {
+.bigcontainer:after, .container:after {
   clear: both;
 }
 
@@ -29,16 +30,25 @@
   .container {
     width: 750px;
   }
+	.bigcontainer{
+	width:780px;
+}
 }
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
+	.bigcontainer{
+	width:1000px;
+}
 }
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
   }
+.bigcontainer{
+	width:1200px;
+}
 }
 /*******************************
            Breadcrumb
@@ -1353,16 +1363,6 @@ body > .ui.grid {
     display: none;
   }
 }
-/*
- * # Semantic - Menu
- * http://github.com/jlukic/semantic-ui/
- *
- *
- * Copyright 2013 Contributors
- * Released under the MIT license
- * http://opensource.org/licenses/MIT
- *
- */
 
 /*******************************
             Standard
@@ -1373,13 +1373,13 @@ body > .ui.grid {
 ---------------*/
 
 .ui.menu {
-  margin: 1rem 0rem;
+  margin-bottom:1rem;
+  margin-bottom:16px;
   background-color: #FFFFFF;
   font-size: 0px;
   font-weight: normal;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 0.1875rem;
 }
 
 .ui.menu:first-child {
@@ -2760,11 +2760,11 @@ body > .ui.grid {
 }
 
 .ui.inverted.teal.menu {
-  background-color: #00B5AD;
+  background-color: #007ad5 !important;
 }
 
 .ui.inverted.teal.pointing.menu .active.item:after {
-  background-color: #00B5AD;
+  background-color: #007ad5 !important;
 }
 
 /*--------------
@@ -11038,8 +11038,8 @@ a.ui.teal.label:hover:before {
   padding-right: 0em;
   background-color: transparent;
   border-radius: 0px;
-  -webkit-box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .ui.vertical.segment:first-child {
