@@ -1,5 +1,8 @@
 $(document).ready(function() {
 	//the dropdown menu
+	$('.ui.dropdown')
+	.dropdown();
+
 	$('.ui.selection.dropdown')
   	.dropdown();
 

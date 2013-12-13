@@ -11,7 +11,34 @@
 <body>
 <div class="page">
 <!--header begin-->
-
+<header>
+	<div class="bigcontainer">
+		<div id="logo">
+			<a href="./">yeelink用户中心</a>
+		</div>
+		<div class="user">
+			<div class="ui inline labeled icon top right pointing dropdown">
+			<img class="ui avatar image" src="resource/images/avatar-default.gif">
+			欢迎，$用户名
+			<i class="dropdown icon"></i>
+				<div class="menu">
+					<a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
+					<a class="item" href="/user/logout"><i class="sign out icon"></i>注销登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- the main menu-->
+<div class="ui teal inverted menu">
+	<div class="bigcontainer">
+		<div class="right menu">
+			<a class="active item" href="./index.html"><i class="home icon"></i>管理首页</a>
+			<a class="item"><i class="sitemap icon"></i>设备</a>
+			<a class="item" href="user_profile.html"><i class="info icon"></i>账户</a>
+		</div>
+	</div>
+</div>
 
 <!--the main content begin-->
 	<div class="container">
@@ -28,23 +55,22 @@
 			</div>
 		</div>
 		<div class="ui small message" id="showApiKey">
-			<div class="content">
-				<div class="ui form segment">
-					<div class="inline field">
-    					<label style="font-size:16px;"><i class="key large icon"></i> 您的API Key : </label>
-    					<input type="text" value="793jIEGJjkjkljfUI3JRTJOIO" readonly="readonly" id="apiKey">
-						<div class="ui buttons">
-  							<a class="ui small positive button" id="copy-apiKey" href="#">复制</a>
-  							<a class="ui small button">管理</a>
-						</div>
-						<a id="deviceQuickButton" class="ui red small labeled icon button" href="#">
-							<i class="settings icon"></i>
-							管理所有设备
-						</a>
-  					</div>
-    			</div>
-			</div>
-		</div>
+        	<div class="content">
+            	<div class="ui form segment">
+               		<div class="inline field">
+                    	<label style="font-size:16px;"><i class="key large icon"></i> 您的API Key : </label>
+                        <input type="text" value="793jIEGJjkjkljfUI3JRTJOIO" readonly="readonly" id="apiKey">
+                        <div class="ui buttons">
+                        	<a class="ui small positive button" id="copy-apiKey" href="#">复制</a>
+							<a class="ui small button">管理</a>
+                         </div>
+                   		<a id="deviceQuickButton" class="ui red small labeled icon button" href="#">
+                        <i class="settings icon"></i>管理所有设备
+                        </a>
+                     </div>
+                  </div>
+   			</div>
+        </div>
 	<!--device list-->
 	<div class="ui three column grid" id="deviceList">
 		<div class="row">
@@ -94,9 +120,9 @@
 </div>
 <!--footer begin-->
 <footer>
-	<div class="container">
-		<div id="copyrights">
-			<div class="inset">
+	<div id="copyrights">
+		<div class="inset">
+			<div class="bigcontainer">
 				<div class="fl">
 					<div class="logo"></div>
 					<p>&copy; 2020 青岛亿联客信息技术有限公司, 版权所有<br />
@@ -116,6 +142,8 @@
 			path:'resource/javascript/ZeroClipboard.swf',
 			copy:function(){return $('input#apiKey').val();}
 		});
+		$('.ui.dropdown')
+			.dropdown();
 	});
 </script>
 </body>

@@ -47,10 +47,10 @@
 			<div class="four wide column">
 				<div class="verticalMenu">
 					<div class="ui vertical pointing menu fluid">
-  						<a class="active teal item">
+  						<a class="item">
 							<i class="edit icon"></i>账户设置
   						</a>
-						<a class="item">
+						<a class="active teal item">
 							<i class="key icon"></i>管理API Key
 						</a>
   						<a class="item">
@@ -63,41 +63,24 @@
 				<div class="pageHeader">
 					<div class="segment">
 						<h3 class="ui dividing header">
-  							<i class="large edit icon"></i>
+  							<i class="large key icon"></i>
   							<div class="content">
-    							账户设置
-    							<div class="sub header">您的个人账户信息</div>
+    							管理API Key
+    							<div class="sub header">可以生成新的API Key</div>
   							</div>
 						</h3>
 					</div>
 				</div>
 				<!--the user_profile form-->
 				<div class="ui form vertical segment">
-					<form action="/ueser/user_profile" name="form" method="post">
-						<div class="two fields">
-							<div class="field">
-								<label>用户名</label>
-								<div class="ui left labeled icon input">
-									<input type="text" id="username" name="username" value="用户名" disabled="disabled">
-									<i class="user icon"></i>
-									<div class="ui corner label">
-									</div>
-								</div>
-							</div>
-							<div class="field">
-								<label>电子邮箱</label>
-								<div class="ui left labeled icon input">
-									<input type="text" id="useremail" name="useremail" value="example@yeelink.net">
-									<i class="mail icon"></i>
-								</div>
-							</div>
-						</div>
+					<form action="/ueser/apikey_manage" name="form" method="post">
 						<div class="field">
-							<label>关 于</label>
-							<textarea></textarea>
+							<label>API Key</label>
+							<div class="ui action input">
+								<input class="text" id="api key" value="8e8fd8cad81ddef1179c9b690d0ba90a" readonly>
+								<a class="ui red right labeled icon button"><i class="refresh icon"></i>重新生成</a>
+							</div>
 						</div>
-						<input class="ui blue submit button" type="submit" value="保存">
-						<input class="ui basic small button" type="reset" value="取消">
 					</form>
 				</div>
 			</div>

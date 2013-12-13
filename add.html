@@ -12,7 +12,34 @@
 <body>
 <div class="page">
 <!--header begin-->
-
+<header>
+	<div class="bigcontainer">
+		<div id="logo">
+			<a href="./">yeelink用户中心</a>
+		</div>
+		<div class="user">
+			<div class="ui inline labeled icon top right pointing dropdown">
+			<img class="ui avatar image" src="resource/images/avatar-default.gif">
+			欢迎，$用户名
+			<i class="dropdown icon"></i>
+				<div class="menu">
+					<a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
+					<a class="item" href="/user/logout"><i class="sign out icon"></i>注销登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- the main menu-->
+<div class="ui teal inverted menu fluid">
+	<div class="bigcontainer">
+		<div class="right menu">
+			<a class="item" href="./index.html"><i class="home icon"></i>管理首页</a>
+			<a class="active item"><i class="sitemap icon"></i>设备</a>
+			<a class="item" href="user_profile.html"><i class="info icon"></i>账户</a>
+		</div>
+	</div>
+</div>
 <!--the main content begin-->
 	<div class="container">
 	<!--the content-->
@@ -20,7 +47,7 @@
 			<!--the vertical menu-->
 			<div class="four wide column">
 				<div class="verticalMenu">
-					<div class="ui vertical pointing menu">
+					<div class="ui vertical pointing menu fluid">
   						<a class="active teal item">
 							<i class="add icon"></i> 绑定新设备
   						</a>
@@ -46,9 +73,9 @@
 						</h3>
 					</div>
 				</div>
-				<div class="ui form vertical segment">
+				<div class="ui form fluid vertical segment">
 					<form name="form" action="/user/new_device" method="post">
-						<div class="inline field">
+						<div class="field">
 							<label>设备来源</label>
 							<div class="ui dropdown selection">
       							<input type="hidden" name="gender" value="1">
@@ -63,11 +90,17 @@
 						<div class="two fields">
 							<div class="field">
 								<label>设备名</label>
-								<input type="text" placeholder="给您的设备起个名,您容易记住就行，30个字符内……" id="device_title" name="device_title" value=""/>
+								<div class="ui left labeled icon input">
+									<input type="text" placeholder="给您的设备起个名,您容易记住就行，30个字符内……" id="device_title" name="device_title" value=""/>
+									<i class="sitemap icon"></i>
+								</div>
 							</div>
 							<div class="diy field">
 								<label>标签（tags）</label>
-								<input type="text" placeholder="各关键词间用逗号(,)分隔" id="device_tags" name="device_tags"/>
+								<div class="ui left labelen icon input">
+									<input type="text" placeholder="各关键词间用逗号(,)分隔" id="device_tags" name="device_tags"/>
+									<i class="tags icon"></i>
+								</div>
 							</div>
 						</div>
 						<div class="two fields yeelink" style="display:none;">
@@ -84,7 +117,7 @@
 							<label>描述</label>
 							<textarea placeholder="不超过30个字符……"></textarea>
 						</div>
-						<div class="diy inline field">
+						<div class="diy field">
 							<label>地理位置名称</label>
 							<div class="ui dropdown selection">
       							<input type="hidden" name="gender" value="1">
@@ -98,17 +131,29 @@
 						</div>
 						<div class="diy field">
 							<label>地理位置数据
-							<small> (双击地图放置一个标记以表示设备所在的位置，坐标会被自动记录。)</small></label>
+							<small> &nbsp;&nbsp;(双击地图放置一个标记以表示设备所在的位置，坐标会被自动记录。)</small></label>
 							<!--make a div for google map-->
 							<div id="locmap" class="locmap">地图加载中...</div>
-							<div class="inline field">
-								<label>经度</label>
-								<input type="text" id="device_lng" name="device_lng" readonly="readonly" />
-							<label>纬度</label>
-							<input type="text" id="device_lat" name="device_lat" readonly="readonly" />
+							<div class="two fields">
+								<div class="field">
+									<label>经度</label>
+									<div class="ui left labeled icon input">
+										<input type="text" id="device_lng" name="device_lng" readonly="readonly" />
+										<i class="map marker icon"></i>
+										<div class="ui corner label"></div>
+									</div>
+								</div>
+								<div class="field">
+									<label>纬度</label>
+									<div class="ui left labeled icon input">
+										<input type="text" id="device_lat" name="device_lat" readonly="readonly" />
+										<i class="map marker icon"></i>
+										<div class="ui corner label"></div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="inline field">
+						<div class="field">
 							<label>放置场地</label>
 							<div class="ui dropdown selection">
 								<input type="hidden" name="gender" value="1">
@@ -120,7 +165,7 @@
 								</div>
     						</div>
 						</div>
-						<div class="inline field">
+						<div class="field">
     						<div class="ui checkbox">
 								<input type="checkbox">
 								<label>对于自备设备，默认接入是公开的</label>
@@ -139,10 +184,12 @@
 <footer>
 	<div id="copyrights">
 		<div class="inset">
-			<div class="fl">
-				<div class="logo"></div>
-				<p>&copy; 2020 青岛亿联客信息技术有限公司, 版权所有<br />
+			<div class="bigcontainer">
+				<div class="fl">
+					<div class="logo"></div>
+					<p>&copy; 2020 青岛亿联客信息技术有限公司, 版权所有<br />
 <a href="http://www.miibeian.gov.cn" target="_blank">鲁ICP备12022271号</a></p>
+				</div>
 			</div>
 		</div>
 	</div>
