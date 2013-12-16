@@ -120,10 +120,47 @@
 		</div>
 	</div>
 	<!--add action model-->
-	<div class="ui test add modal">
+	<div class="ui test modal">
 		<i class="close icon"></i>
 		<div class="header">
 			增加新动作
+		</div>
+		<div class="content">
+			<div class="left">
+				<i class="code icon"></i>
+			</div>
+			<div class="right">
+				<form action="/user/new_action" name="form" method="post">
+					<div class="ui form vertical segment">
+						<div class="field">
+							<label>动作名</label>
+							<div class="ui left labeled icon input">
+								<input type="text" id="actName" name="actName">
+								<i class="terminal icon"></i>
+							</div>
+						</div>
+						<div class="field">
+							<label>类型</label>
+							<div class="ui dropdown selection">
+      							<input type="hidden" name="gender" value="1">
+      							<div class="default text">电子邮件</div>
+								<i class="dropdown icon"></i>
+								<div class="menu">
+									<div class="item" data-value="短信" value="1">短信</div>
+									<div class="item" data-value="电子邮件" value="2">电子邮件</div>
+									<div class="item" data-value="网址推送" value="3">网址推送</div>
+									<div class="item" data-value="微博推送" value="4">微博发布</div>
+									<div class="item" data-value="即时通讯-QQ" value="5">即时通讯-QQ</div>
+									<div class="item" data-value="移动端推送" value="6">移动端推送</div>
+									<div class="item" data-value="微信推送" value="7">微信推送</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="actions"></div>
+
 		</div>
 	</div>
 
@@ -146,8 +183,11 @@
 <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="resource/javascript/framework.js"></script>
 <script>
-	$('.test.add.modal')
-		.modal('attach events','.add.button','show')
+	$('.ui.dropdown')
+			.dropdown();
+
+	$('.test.modal')
+		.modal('attach events','.add.button','show');
 </script>
 </body>
 </html>
