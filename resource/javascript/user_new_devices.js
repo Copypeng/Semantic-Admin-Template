@@ -1,7 +1,9 @@
 $(document).ready(function() {
 	//the dropdown menu
 	$('.ui.dropdown')
-	.dropdown();
+	.dropdown({
+		on:'hover'
+	});
 
 	$('.ui.selection.dropdown')
   	.dropdown();

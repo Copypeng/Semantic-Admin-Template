@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>设备动作——Yeelink</title>
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
-	<link type="text/css" rel="stylesheet" href="resource/css/user_new_devices.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
 </head>
 <body>
@@ -74,7 +73,7 @@
 					</div>
 				</div>
 				<div class="ui form vertical segment">
-					<a class="ui red small labeled icon button" href="#"><i class="code icon"></i>增加新动作</a>
+					<div class="ui red small labeled icon add button"><i class="code icon"></i>增加新动作</div>
 				</div>
 				<div class="ui form fluid vertical segment">
 					<form name="form" action="/user/actions" method="post">
@@ -120,7 +119,13 @@
 			</div>
 		</div>
 	</div>
-	<!--model-->
+	<!--add action model-->
+	<div class="ui test add modal">
+		<i class="close icon"></i>
+		<div class="header">
+			增加新动作
+		</div>
+	</div>
 
 </div>
 <!--footer begin-->
@@ -140,7 +145,9 @@
 
 <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="resource/javascript/framework.js"></script>
-<script type="text/javascript" src="resource/javascript/user_new_devices.js"></script>
-<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyC7a2MMoG2nkxwY6bmxjoULoiz2YTp43iI&sensor=false&language=cn"></script>
+<script>
+	$('.test.add.modal')
+		.modal('attach events','.add.button','show')
+</script>
 </body>
 </html>

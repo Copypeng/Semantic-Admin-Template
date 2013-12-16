@@ -78,7 +78,7 @@
 							<label>API Key</label>
 							<div class="ui action input">
 								<input class="text" id="api key" value="8e8fd8cad81ddef1179c9b690d0ba90a" readonly>
-								<a class="ui red right labeled icon button"><i class="refresh icon"></i>重新生成</a>
+								<div class="ui right labeled icon red button"><i class="refresh icon"></i>重新生成</div>
 							</div>
 						</div>
 					</form>
@@ -86,6 +86,33 @@
 			</div>
 		</div>
 	</div>
+	<!--the api confirm modal-->
+	<div class="ui basic modal">
+  		<div class="header">
+			重新生成一个API Key？
+  		</div>
+  		<div class="content">
+    		<div class="left">
+				<i class="info letter icon"></i>
+			</div>
+			<div class="right">
+      			<h3>重新生成意味着您之前的API Key将失效，您确定吗？</h3>
+    		</div>
+  		</div>
+  		<div class="actions">
+      		<div class="two fluid ui buttons">
+        		<div class="ui negative labeled icon button">
+					<i class="remove icon"></i>
+						否
+        		</div>
+        		<div class="ui positive right labeled icon button">
+						是
+          			<i class="checkmark icon"></i>
+        		</div>
+      		</div>
+    	</div>
+</div>
+
 </div>
 <!--footer begin-->
 <footer>
@@ -107,6 +134,8 @@
 <script type="text/javascript">
 	$('.ui.dropdown')
 	.dropdown();
+	$('.ui.basic.modal')
+  	.modal('attach events','.red.button','show');
 </script>
 </body>
 </html>

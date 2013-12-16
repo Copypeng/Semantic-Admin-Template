@@ -90,14 +90,14 @@
 						<div class="two fields">
 							<div class="field">
 								<label>设备名</label>
-								<div class="ui left labeled icon input">
+								<div class="ui small left labeled icon input">
 									<input type="text" placeholder="给您的设备起个名,您容易记住就行，30个字符内……" id="device_title" name="device_title" value=""/>
 									<i class="sitemap icon"></i>
 								</div>
 							</div>
 							<div class="diy field">
 								<label>标签（tags）</label>
-								<div class="ui left labelen icon input">
+								<div class="ui small left labelen icon input">
 									<input type="text" placeholder="各关键词间用逗号(,)分隔" id="device_tags" name="device_tags"/>
 									<i class="tags icon"></i>
 								</div>
@@ -129,29 +129,24 @@
       							</div>
     						</div>
 						</div>
-						<div class="diy field">
-							<label>地理位置数据
-							<small> &nbsp;&nbsp;(双击地图放置一个标记以表示设备所在的位置，坐标会被自动记录。)</small></label>
-							<!--make a div for google map-->
-							<div id="locmap" class="locmap">地图加载中...</div>
-							<div class="two fields">
-								<div class="field">
-									<label>经度</label>
-									<div class="ui left labeled icon input">
-										<input type="text" id="device_lng" name="device_lng" readonly="readonly" />
-										<i class="map marker icon"></i>
-										<div class="ui corner label"></div>
-									</div>
+						<div class="diy field" id="location">
+							<div class="ui two column grid">
+								<div class="column">
+									<label>地理位置数据<small>&nbsp;&nbsp;（双击地图选择您设备的位置）</small></label>
 								</div>
-								<div class="field">
-									<label>纬度</label>
-									<div class="ui left labeled icon input">
-										<input type="text" id="device_lat" name="device_lat" readonly="readonly" />
-										<i class="map marker icon"></i>
-										<div class="ui corner label"></div>
+								<div class="column">
+									<div class="two fields">
+										<div class="field" style="margin-bottom:0;">
+											<input type="text" id="device_lng" name="device_lng" readonly="readonly">
+										</div>
+										<div class="field" style="margin-bottom:0;">
+											<input type="text" id="device_lat" name="device_lat" readonly="readonly">
+										</div>
 									</div>
 								</div>
 							</div>
+							<!--make a div for google map-->
+							<div id="locmap" class="locmap">地图加载中...</div>
 						</div>
 						<div class="field">
 							<label>放置场地</label>
@@ -171,8 +166,8 @@
 								<label>对于自备设备，默认接入是公开的</label>
 							</div>
   						</div>
-						<input class="ui blue submit button" type="submit" value="保存">
-						<input class="ui basic button" type="reset" value="取消">
+						<input class="ui small blue submit button" type="submit" value="保存">
+						<input class="ui small basic button" type="reset" value="取消">
 					</form>
 					<!--the form end-->
 				</div>
