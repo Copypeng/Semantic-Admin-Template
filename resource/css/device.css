@@ -1,9 +1,15 @@
 .sub.header .right{
     margin-left:1em;
 }
-.ui.device.segment p, .ui.device.segment i{
+.ui.device.segment{
+
+}
+.ui.device.segment p{
     color:#666;
 }
-.ui.device.segment i{
-    opacity:0.3;
+.ui.device.segment p.sensorStatus{
+    font-size:14px;
+}
+.ui.device.segment .sub.header{
+    line-height:1.4;
 }

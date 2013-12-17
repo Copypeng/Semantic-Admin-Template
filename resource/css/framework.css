@@ -9822,9 +9822,10 @@ a.ui.black.label:hover:before {
 
 .ui.green.labels .label,
 .ui.green.label {
-  background-color: #8cc665 !important;
-  border-color: #8cc665 !important;
+  background-color: #1e6823 !important;
+  border-color: #1e6823 !important;
   color: #FFFFFF !important;
+ opacity:0.7;
 }
 
 .ui.labels .green.label:before,
@@ -9864,9 +9865,10 @@ a.ui.green.label:hover:before {
 
 .ui.red.labels .label,
 .ui.red.label {
-  background-color: #D95C5C !important;
-  border-color: #D95C5C !important;
+  background-color: #fd4239 !important;
+  border-color: #fd4239 !important;
   color: #FFFFFF !important;
+  opacity:0.8;
 }
 
 .ui.labels .red.label:before,
@@ -11079,6 +11081,7 @@ a.ui.teal.label:hover:before {
   -webkit-box-shadow: none;
   box-shadow: none;
   border: none;
+  margin-bottom:14px;
 }
 
 /* No padding on edge content */
@@ -11232,13 +11235,15 @@ a.ui.teal.label:hover:before {
        Colors
 --------------------*/
 
-.ui.device.segment {
+.ui.device.segment, .ui.blue.segment {
   box-shadow:none;
   -webkit-box-shadow:none;
   border-radius:0;
   background-color:#FAFAFA!important;
 }
-
+.ui.blue.segment {
+    border-top:0.2em solid #6ECFF5;
+}
 .ui.green.segment {
   border-top: 0.2em solid #A1CF64;
 }
