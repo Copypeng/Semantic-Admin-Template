@@ -6711,7 +6711,8 @@ i.massive.basic.icon {
 }
 
 .ui.header .sub.header {
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: normal;
   margin: 0em;
   padding: 0em;
@@ -8878,7 +8879,6 @@ i.huge.icon {
   font-size: 4em;
   vertical-align: middle;
 }
-
 i.massive.icon {
   font-size: 8em;
   vertical-align: middle;
@@ -9379,14 +9379,13 @@ img.ui.image {
 .ui.label {
   display: inline-block;
   vertical-align: middle;
-  margin: -0.25em 0.25em 0em;
+  margin: -0.25em 0em 0em;
   background-color: #E8E8E8;
   border-color: #E8E8E8;
-  padding: 0.5em 0.8em;
+  padding: 0.5em 0.5em;
   color: rgba(0, 0, 0, 0.65);
   text-transform: uppercase;
   font-weight: normal;
-  border-radius: 0.325em;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -9823,8 +9822,8 @@ a.ui.black.label:hover:before {
 
 .ui.green.labels .label,
 .ui.green.label {
-  background-color: #A1CF64 !important;
-  border-color: #A1CF64 !important;
+  background-color: #8cc665 !important;
+  border-color: #8cc665 !important;
   color: #FFFFFF !important;
 }
 
@@ -11233,8 +11232,7 @@ a.ui.teal.label:hover:before {
        Colors
 --------------------*/
 
-.ui.blue.segment {
-  border-top: 0.2em solid #6ECFF5;
+.ui.device.segment {
   box-shadow:none;
   -webkit-box-shadow:none;
   border-radius:0;

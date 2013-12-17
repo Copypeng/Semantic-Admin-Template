@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的设备——Yeelink</title>
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
-	<link type="text/css" rel="stylesheet" href="resource/css/user_new_devices.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/device.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
 </head>
 <body>
@@ -60,7 +60,7 @@
 					</div>
 				</div>
 			</div>
-			<!--the newDevice form-->
+			<!--the Devicelist-->
 			<div class="twelve wide column">
 				<div class="pageHeader">
 					<div class="segment">
@@ -76,24 +76,96 @@
                 <div class="ui form vertical segment">
 					<a class="ui red small labeled icon add button" href="./add.html"><i class="add icon"></i>添加新设备</a>
 				</div>
-				<div class="ui blue two column middle aligned relaxed grid segment">
-  					<div class="column">
-						<div class="ui vertical segment">
-							<div class="content">
-								<h4>设备名01</h4>
-								<p>设备ID：234
-									<span class="right">传感器数目：4</span>
-								</p>
+                <!--the device content-->
+				<div class="ui device middle aligned relaxed grid segment">
+  					<div class="three wide center aligned column">
+                        <i class="massive sitemap icon"></i>
+                    </div>
+                    <div class="nine wide column">
+							<div class="ui device segment">
+                                <h5 class="ui header">设备名01
+                                    <div class="sub header">
+                                        设备ID：234
+                                        <span class="right">
+                                            设备类型：自备设备
+                                        </span>
+                                    </div>
+                                </h5>
 								<p>这里是设备描述！</p>
-								<p>设备API url: http://api.yeelink.net/device/234</p>
+                                <p>传感器状态：
+                                    <span class="ui green ok label" data-variation="inverted"></span>
+                                    <span class="ui green ok label" data-variation="inverted"></span>
+                                    <span class="ui green ok label" data-variation="inverted"></span>
+                                    <span class="ui red error label" data-variation="inverted"></span>
+                                </p>
 							</div>
-						</div>
-					</div>
-  					<div class="ui vertical divider"></div>
-  					<div class="center aligned column">
+                    </div>
+  					<div class="four wide center aligned column">
     					<div class="ui buttons">
-  							<a class="ui positive button">管 理</a>
-							<a class="ui basic button">删 除</a>
+  							<a class="ui small blue button">管 理</a>
+							<a class="ui small basic button">删 除</a>
+						</div>
+  					</div>
+				</div>
+                <!--another device content-->
+                <div class="ui device middle aligned relaxed grid segment">
+  					<div class="three wide center aligned column">
+                        <i class="massive sitemap icon"></i>
+                    </div>
+                    <div class="nine wide column">
+							<div class="ui device segment">
+                                <h5 class="ui header">设备名01
+                                    <div class="sub header">
+                                        设备ID：234
+                                        <span class="right">
+                                            设备类型：自备设备
+                                        </span>
+                                    </div>
+                                </h5>
+								<p>这里是设备描述！</p>
+                                <p>传感器状态：
+                                    <span class="ui green ok label" data-variation="inverted"></span>
+                                    <span class="ui green ok label" data-variation="inverted"></span>
+                                    <span class="ui green ok label" data-variation="inverted"></span>
+                                    <span class="ui red error label" data-variation="inverted"></span>
+                                </p>
+							</div>
+                    </div>
+  					<div class="four wide center aligned column">
+    					<div class="ui buttons">
+  							<a class="ui small blue button">管 理</a>
+							<a class="ui small basic button">删 除</a>
+						</div>
+  					</div>
+				</div>
+                <!--another device content-->
+                <div class="ui device middle aligned relaxed grid segment">
+  					<div class="three wide center aligned column">
+                        <i class="massive sitemap icon"></i>
+                    </div>
+                    <div class="nine wide column">
+							<div class="ui device segment">
+                                <h5 class="ui header">设备名01
+                                    <div class="sub header">
+                                        设备ID：234
+                                        <span class="right">
+                                            设备类型：自备设备
+                                        </span>
+                                    </div>
+                                </h5>
+								<p>这里是设备描述！</p>
+                                <p>传感器状态：
+                                    <span class="ui green ok label" data-variation="inverted"></span>
+                                    <span class="ui green ok label" data-variation="inverted"></span>
+                                    <span class="ui green ok label" data-variation="inverted"></span>
+                                    <span class="ui red error label" data-variation="inverted"></span>
+                                </p>
+							</div>
+                    </div>
+  					<div class="four wide center aligned column">
+    					<div class="ui buttons">
+  							<a class="ui small blue button">管 理</a>
+							<a class="ui small basic button">删 除</a>
 						</div>
   					</div>
 				</div>
@@ -115,10 +187,26 @@
 		</div>
 	</div>
 </footer>
-
 <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="resource/javascript/framework.js"></script>
-<script type="text/javascript" src="resource/javascript/user_new_devices.js"></script>
-<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyC7a2MMoG2nkxwY6bmxjoULoiz2YTp43iI&sensor=false&language=cn"></script>
+<script>
+    $(document).ready(function(){
+		$('.ui.dropdown')
+			.dropdown()
+        ;
+
+        $('.ok.label')
+        .popup({
+            content:'这个传感器正常工作。'
+        })
+        ;
+
+        $('.error.label')
+        .popup({
+            content:'哎呀，这个传感器异常。'
+        })
+        ;
+	});
+</script>
 </body>
 </html>

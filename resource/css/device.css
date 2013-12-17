@@ -1,0 +1,9 @@
+.sub.header .right{
+    margin-left:1em;
+}
+.ui.device.segment p, .ui.device.segment i{
+    color:#666;
+}
+.ui.device.segment i{
+    opacity:0.3;
+}

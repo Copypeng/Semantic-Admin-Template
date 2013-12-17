@@ -75,7 +75,7 @@
 	<div class="ui three column grid" id="deviceList">
 		<div class="row">
 			<div class="column">
-				<div class="ui blue segment">
+				<div class="ui device segment">
 					<a href="#" class="content">
 						<h4 class="deviceName">设备名01</h4>
 						<p class="deviceId">设备ID：234</p>
@@ -85,7 +85,7 @@
 				</div>
 			</div>
 			<div class="column">
-				<div class="ui blue segment">
+				<div class="ui device segment">
 					<a class="content" href="#">
 						<h4 class="deviceName">设备名02</h4>
 						<p class="deviceId">设备ID：4354</p>
@@ -95,7 +95,7 @@
 				</div>
 			</div>
 			<div class="column">
-				<div class="ui blue segment">
+				<div class="ui device segment">
 					<a class="content" href="#">
 						<h4 class="deviceName">设备名03</h4>
 						<p class="deviceId">设备ID：344</p>
@@ -107,7 +107,7 @@
 		</div>
 		<div class="row">
 			<div class="column">
-				<div class="ui blue segment">
+				<div class="ui device segment">
 					<a class="content" href="./add.html">
 						<h4 class="newDevice"><i class="huge add icon"></i>
 						添加新设备</h4>
@@ -143,9 +143,7 @@
 			copy:function(){return $('input#apiKey').val();}
 		});
 		$('.ui.dropdown')
-			.dropdown({
-				on: 'hover'
-			});
+			.dropdown();
 	});
 </script>
 </body>
