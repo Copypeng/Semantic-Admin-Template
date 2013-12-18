@@ -115,6 +115,7 @@ header .user{
 }
 .ui.device.segment p.sensorStatus{
     font-size:14px;
+    font-size:0.875rem;
 }
 .ui.device.segment .sub.header{
     line-height:1.4;
@@ -139,6 +140,29 @@ header .user{
 	border: 1px solid transparent!important;
 	box-shadow:none!important;
 	-webkit-box-shadow:none!important;
+}
+/*the sensor*/
+.ui.small.header{
+    font-weight:normal;
+}
+.ui.grid.segment.sensor.segment{
+    padding:32px 0 16px;
+    padding:2rem 0 1rem;
+    border-bottom:1px solid rgba(0,0,0,.1);
+}
+.ui.sensor.segment .sensorUrl{
+    font-size:14px;
+    font-size:0.875rem;
+    color:#666;
+}
+.ui.sensor.segment .sensorUrl a{
+    color:#0AA5DF;
+}
+.ui.sensor.segment .sensorUrl a:hover, .ui.sensor.segment .sensorUrl a:focus{
+    text-decoration:underline;
+}
+.ui.vertical.center.segment{
+    text-align:center;
 }
 /*footer start*/
 footer {
