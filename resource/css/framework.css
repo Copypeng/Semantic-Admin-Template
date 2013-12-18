@@ -2048,7 +2048,8 @@ body > .ui.grid {
 ---------------*/
 
 .ui.pagination.menu {
-  margin: 0em;
+  float:right;
+  margin: 56px 0 0;
   display: inline-block;
   vertical-align: middle;
 }
