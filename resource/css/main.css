@@ -51,6 +51,7 @@ header .user{
 }
 /*main content*/
 .pageHeader, .verticalMenu{
+    padding:16px 0;
 	padding:1rem 0;
 }
 /*show api key*/
@@ -65,42 +66,79 @@ header .user{
 #deviceQuickButton {
 	float:right;
 }
-/*device list*/
-#deviceList{
+/*index list*/
+#indexList{
 	padding-top:2rem;
 }
-#deviceList .segment{
+#indexList .segment{
 	padding:0;
 }
-#deviceList a.content{
+#indexList a.content{
 	position:relative;
 	padding:1rem;
 	display:block;
 	min-height:13em;
 	z-index:100;
 }
-#deviceList a.content:hover, #deviceList a.content:focus{
+#indexList a.content:hover, #indexList a.content:focus{
 	background-color:#b4ddf5 !important;
 }
-#deviceList h4{
+#indexList h4{
 	margin:0;
 	color:#333;
 }
-#deviceList p.deviceId{
+#indexList p.deviceId{
 	margin-top:0;
 }
-#deviceList p.deviceDescription{
+#indexList p.deviceDescription{
 	height:84px;
 	overflow:auto;
 	margin:2rem 0;
 }
-#deviceList h4.newDevice{
+#indexList h4.newDevice{
 	padding:4.7em 0;
 	text-align:center;
 	top:50%;
 }
-#deviceList p{
+#indexList p{
 	margin:0;
+}
+/*the device list*/
+.sub.header .right{
+    margin-left:1em;
+}
+.ui.device.segment{
+
+}
+.ui.device.segment p{
+    color:#666;
+}
+.ui.device.segment p.sensorStatus{
+    font-size:14px;
+}
+.ui.device.segment .sub.header{
+    line-height:1.4;
+}
+/*new device*/
+.locmap {
+	height: 180px;
+	background-color: #CCC;
+	text-align: center;
+	width: 100% !important;
+	border: #CCC 1px solid;z
+}
+#location label{
+	margin: 0em 0em 0.3em;
+	display: block;
+	color: #555555;
+	font-size:14px;
+	font-size:0.875rem;
+}
+#location input{
+	padding:0!important;
+	border: 1px solid transparent!important;
+	box-shadow:none!important;
+	-webkit-box-shadow:none!important;
 }
 /*footer start*/
 footer {
