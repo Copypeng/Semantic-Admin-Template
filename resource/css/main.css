@@ -159,9 +159,18 @@ header .user{
 .ui.device.segment a.externalUrl{
     color:#007ad5;
 }
+.ui.device.segment a.sensorEdit{
+    margin-right:14px;
+    margin-right:0.875rem;
+}
+.ui.device.segment a.sensorEdit:hover{
+    color:#333;
+}
+.ui.device.segment a:hover, .ui.device.segment a:focus{
+    cursor:pointer;
+}
 .ui.device.segment a.externalUrl:hover, .ui.device.segment a.externalUrl:focus{
     text-decoration:underline;
-    cursor:pointer;
 }
 span.select:focus{
 
