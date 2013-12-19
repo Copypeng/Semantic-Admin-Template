@@ -108,6 +108,8 @@ header .user{
     color:#666;
     font-size:14px;
     font-size:0.875rem;
+    margin:4px 0;
+    margin:0.25rem 0;
 }
 .ui.device.segment span.stress{
     font-size:16px;
@@ -145,7 +147,7 @@ header .user{
 	box-shadow:none!important;
 	-webkit-box-shadow:none!important;
 }
-/*the sensor*/
+/*the device manage page*/
 .ui.small.header{
     font-weight:normal;
 }
@@ -154,25 +156,18 @@ header .user{
     padding:2rem 0 1rem;
     border-bottom:1px solid rgba(0,0,0,.1);
 }
-.ui.sensor.segment .sensorUrl{
-    font-size:14px;
-    font-size:0.875rem;
-    color:#666;
+.ui.device.segment a.externalUrl{
+    color:#007ad5;
 }
-.ui.sensor.segment .sensorUrl a{
-    color:#0AA5DF;
-}
-.ui.sensor.segment .sensorUrl a:hover, .ui.sensor.segment .sensorUrl a:focus{
+.ui.device.segment a.externalUrl:hover, .ui.device.segment a.externalUrl:focus{
     text-decoration:underline;
+    cursor:pointer;
+}
+span.select:focus{
+
 }
 .ui.vertical.center.segment{
     text-align:center;
-}
-.ui.sensor.segment .sensorIconOK{
-        color:#1e6823 !important;
-}
-.ui.sensor.segment .sensorIconError{
-        color:#fd4239 !important;
 }
 /*label*/
 .ui.type.label{

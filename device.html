@@ -73,220 +73,89 @@
 					</div>
 				</div>
                 <!--the device info-->
-				<div class="ui device middle aligned relaxed grid info segment">
-  					<div class="five wide center aligned column">
-                        <div class="devImgList">
-
-                        </div>
-                    </div>
-                    <div class="seven wide column">
-							<div class="ui device segment">
-                                <h5 class="ui header">设备名01
+				<div class="ui device two column middle aligned relaxed grid segment">
+                    <div class="column verborder">
+							<div class="ui info segment">
+                                <h5 class="ui header">设备名01 <span class="ui type label">pub</span>
                                     <div class="sub header">
-                                        设备ID：234
-                                        <span class="right">
-                                            设备类型：自备设备
-                                        </span>
+                                        这里是设备描述！
                                     </div>
                                 </h5>
-								<p>这里是设备描述！</p>
-                                <p class="sensorStatus">传感器状态：
-                                    <span class="ui green ok label" data-variation="inverted"></span>
-                                    <span class="ui green ok label" data-variation="inverted"></span>
-                                    <span class="ui green ok label" data-variation="inverted"></span>
-                                    <span class="ui red error label" data-variation="inverted"></span>
-                                    <span class="ui green ok label" data-variation="inverted"></span>
-                                    <span class="ui green ok label" data-variation="inverted"></span>
-                                    <span class="ui green ok label" data-variation="inverted"></span>
-                                    <span class="ui green ok label" data-variation="inverted"></span>
-                                    <span class="ui green ok label" data-variation="inverted"></span>
-                                    <span class="ui green ok label" data-variation="inverted"></span>
-                                </p>
+								<p>设备ID： <span class="stress">2343</span></p>
+                                <p>设备地址： <a class="externalUrl" href="http://www.yeelink.net/devices/5905" target="_blank">http://www.yeelink.net/devices/5905</a></p>
+                            <p>API 地址： http://api.yeelink.net/devices/5905</p>
 							</div>
                     </div>
-  					<div class="four wide center aligned column">
-  							<a class="ui tiny red labeled icon add button" href=""><i class="add icon"></i>添加传感器</a>
+  					<div class="center aligned column">
+    					<div class="ui buttons">
+  							<a class="ui tiny blue button" href=""><i class="setting icon"></i>管 理</a>
+							<a class="ui tiny basic button"><i class="trash icon"></i>删 除</a>
+						</div>
   					</div>
 				</div>
-                <!--the sernor info-->
-                <div class="ui vertical middle aligned relaxed grid sensor segment">
-                    <div class="two wide column">
-                        <div class="sensorIconOK">
-                            <i class="huge off icon"></i>
-                        </div>
+                <div class="ui small header">传感器列表</div>
+                <div class="ui two column device grid segment">
+                    <div class="column">
+                        <div class="ui info segment">
+                                <h5 class="ui header">传感器01 <span class="ui type label">数据型</span>
+                                </h5>
+								<p>标示ID： <span class="stress">2343</span></p>
+                                <p>地址： <a class="externalUrl" href="http://www.yeelink.net/devices/5905" target="_blank">http://www.yeelink.net/devices/5905</a></p>
+                            <p>API 地址： http://api.yeelink.net/devices/5905</p>
+				        </div>
                     </div>
-                    <div class="four wide column">
-                        <h5 class="ui small header">传感器01
-                            <div class="sub header">
-                                这是一个开关型传感器。
-                            </div>
-                        </h5>
-                        <div class="ui buttons">
-                            <a class="ui mini blue button">编辑</a>
-                            <a class="ui mini basic button">删除</a>
-                        </div>
-                    </div>
-                    <div class="ten wide column">
-                        <div class="ui vertical center segment">
-                            <div class="inline field">
-                                <div class="ui large slider checkbox">
-                                    <input type="checkbox" id="sensor-id">
-                                    <label for="sensor-id"></label>
-                                </div>
-                                <div class="ui pointing left label">
-                                    单击以改变开关状态
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sensorUrl">状态URL：<i class="external url icon"></i>
-                            <a href="http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints</a>
-                        </div>
-                    </div>
+                    <div class="column"></div>
                 </div>
-                <!--another sernor-->
-                <div class="ui vertical middle aligned relaxed grid sensor segment">
-                    <div class="two wide column">
-                        <div class="sensorIconError">
-                            <i class="huge signal icon"></i>
-                        </div>
+                <div class="ui two column device grid segment">
+                    <div class="column">
+                        <div class="ui info segment">
+                                <h5 class="ui header">传感器01 <span class="ui type label">数据型</span>
+                                </h5>
+								<p>标示ID： <span class="stress">2343</span></p>
+                                <p>地址： <a class="externalUrl" href="http://www.yeelink.net/devices/5905" target="_blank">http://www.yeelink.net/devices/5905</a></p>
+                            <p>API 地址： http://api.yeelink.net/devices/5905</p>
+				        </div>
                     </div>
-                    <div class="four wide column">
-                        <h5 class="ui small header">传感器02
-                            <div class="sub header">
-                                这是一个数值型传感器。
-                            </div>
-                        </h5>
-                        <div class="ui buttons">
-                            <a class="ui mini blue button">编辑</a>
-                            <a class="ui mini basic button">删除</a>
-                        </div>
-                    </div>
-                    <div class="ten wide column">
-                        <div class="ui vertical center segment">
-                            <div class="ui buttons">
-                                <a class="ui tiny positive button" href="">查看数据</a>
-                                <a class="ui tiny orange button" href="">添加触发</a>
-                            </div>
-                        </div>
-                        <div class="sensorUrl">状态URL：<i class="external url icon"></i>
-                            <a href="http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints</a>
-                        </div>
-                    </div>
+                    <div class="column"></div>
                 </div>
-                <!--another sernor-->
-                <div class="ui vertical middle aligned relaxed grid sensor segment">
-                    <div class="two wide column">
-                        <div class="sensorIconOK">
-                            <i class="huge location icon"></i>
-                        </div>
+                <div class="ui two column device grid segment">
+                    <div class="column">
+                        <div class="ui info segment">
+                                <h5 class="ui header">传感器01 <span class="ui type label">数据型</span>
+                                </h5>
+								<p>标示ID： <span class="stress">2343</span></p>
+                                <p>地址： <a class="externalUrl" href="http://www.yeelink.net/devices/5905" target="_blank">http://www.yeelink.net/devices/5905</a></p>
+                            <p>API 地址： http://api.yeelink.net/devices/5905</p>
+				        </div>
                     </div>
-                    <div class="four wide column">
-                        <h5 class="ui small header">传感器03
-                            <div class="sub header">
-                                这是一个GPS型传感器。
-                            </div>
-                        </h5>
-                        <div class="ui buttons">
-                            <a class="ui mini blue button">编辑</a>
-                            <a class="ui mini basic button">删除</a>
-                        </div>
-                    </div>
-                    <div class="ten wide column">
-                        <div class="ui vertical center segment">
-                            <a class="ui tiny positive button">查看数据</a>
-                        </div>
-                        <div class="sensorUrl">状态URL：<i class="external url icon"></i>
-                            <a href="http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints</a>
-                        </div>
-                    </div>
+                    <div class="column"></div>
                 </div>
-                <!--another sernor-->
-                <div class="ui vertical middle aligned relaxed grid sensor segment">
-                    <div class="two wide column">
-                        <div class="sensorIconOK">
-                            <i class="huge exchange icon"></i>
-                        </div>
-                    </div>
-                    <div class="four wide column">
-                        <h5 class="ui small header">传感器04
-                            <div class="sub header">
-                                这是一个泛传感型传感器。
-                            </div>
-                        </h5>
-                        <div class="ui buttons">
-                            <a class="ui mini blue button">编辑</a>
-                            <a class="ui mini basic button">删除</a>
-                        </div>
-                    </div>
-                    <div class="ten wide column">
-                        <div class="ui vertical center segment sensorUrl">
-                           有关泛传感器数据的上传和查询等操作请参阅<a href="http://www.yeelink.net/developer/api" target="_blank">API文档</a>
-                        </div>
-                        <div class="sensorUrl">状态URL：<i class="external url icon"></i>
-                            <a href="http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints</a>
-                        </div>
-                    </div>
+                <div class="ui pagination menu">
+                <a class="icon item">
+                    <i class="icon left arrow"></i>
+                </a>
+                <a class="active item">
+                    1
+                </a>
+                <div class="disabled item">
+                    ...
                 </div>
-                <!--another sernor-->
-                <div class="ui vertical middle aligned relaxed grid sensor segment">
-                    <div class="two wide column">
-                        <div class="sensorIconOK">
-                            <i class="huge camera icon"></i>
-                        </div>
-                    </div>
-                    <div class="four wide column">
-                        <h5 class="ui small header">传感器05
-                            <div class="sub header">
-                                这是一个图片型传感器。
-                            </div>
-                        </h5>
-                        <div class="ui buttons">
-                            <a class="ui mini blue button">编辑</a>
-                            <a class="ui mini basic button">删除</a>
-                        </div>
-                    </div>
-                    <div class="ten wide column">
-                        <div class="ui vertical center segment">
-                            <a class="ui tiny positive button">查看数据</a>
-                        </div>
-                        <div class="sensorUrl">状态URL：<i class="external url icon"></i>
-                            <a href="http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints</a>
-                        </div>
-                    </div>
-                </div>
-                <!--another sernor-->
-                <div class="ui vertical middle aligned relaxed grid sensor segment">
-                    <div class="two wide column">
-                        <div class="sensorIconOK">
-                            <i class="huge weibo icon"></i>
-                        </div>
-                    </div>
-                    <div class="four wide column">
-                        <h5 class="ui small header">传感器06
-                            <div class="sub header">
-                                这是一个微博抓取型传感器。
-                            </div>
-                        </h5>
-                        <div class="ui buttons">
-                            <a class="ui mini blue button">编辑</a>
-                            <a class="ui mini basic button">删除</a>
-                        </div>
-                    </div>
-                    <div class="ten wide column">
-                        <div class="ui vertical center segment">
-                            <a class="ui tiny orange button">添加触发</a>
-                            <div class="ui pointing top label">
-                                    微博抓取器会定时获取未读微博数、新好友数、未读消息数，可以设置这些数量的触发规则；而且也可以设置通过微博内容触发动作。
-                            </div>
-                        </div>
-                        <div class="sensorUrl">状态URL：<i class="external url icon"></i>
-                            <a href="http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/9569/datapoints</a>
-                        </div>
-                    </div>
-                </div>
-			</div>
-		</div>
-	</div>
+                <a class="item">
+                    4
+                </a>
+                <a class="item">
+                   5
+                </a>
+                <a class="item">
+                    6
+                </a>
+                <a class="icon item">
+                    <i class="icon right arrow"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--footer begin-->
 <footer>
