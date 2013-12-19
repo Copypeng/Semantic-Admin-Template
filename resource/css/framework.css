@@ -11236,7 +11236,7 @@ a.ui.teal.label:hover:before {
        Colors
 --------------------*/
 
-.ui.device.segment, .ui.blue.segment {
+.ui.device.segment, .ui.blue.segment ,.ui.info.segment{
   box-shadow:none;
   -webkit-box-shadow:none;
   border-radius:0;

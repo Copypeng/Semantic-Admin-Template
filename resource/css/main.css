@@ -104,14 +104,18 @@ header .user{
 	margin:0;
 }
 /*the device list*/
-.sub.header .right{
-    margin-left:1em;
-}
-.ui.device.segment{
-
-}
 .ui.device.segment p{
     color:#666;
+    font-size:14px;
+    font-size:0.875rem;
+}
+.ui.device.segment span.stress{
+    font-size:16px;
+    font-size:1rem;
+    color:#333;
+}
+.ui.device.segment .verborder{
+    border-left: 3px solid #007ad5;
 }
 .ui.device.segment p.sensorStatus{
     font-size:14px;
@@ -163,6 +167,23 @@ header .user{
 }
 .ui.vertical.center.segment{
     text-align:center;
+}
+.ui.sensor.segment .sensorIconOK{
+        color:#1e6823 !important;
+}
+.ui.sensor.segment .sensorIconError{
+        color:#fd4239 !important;
+}
+/*label*/
+.ui.type.label{
+    background-color:#47a447;
+    border-color:#47a447;
+    color:#fff;
+    font-size:12px;
+    font-size:0.75rem;
+    padding:0 7px!important;
+    border-radius:.325em;
+    text-transform: uppercase;
 }
 /*footer start*/
 footer {
