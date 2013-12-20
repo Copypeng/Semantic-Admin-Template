@@ -178,6 +178,27 @@ span.select:focus{
 .ui.vertical.center.segment{
     text-align:center;
 }
+.ui.data.segment{
+    background: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    line-height:1.2;
+}
+.ui.data.segment p.data{
+    font-size:48px;
+    font-size:3rem;
+    margin:0;
+}
+.ui.data.segment p.unit{
+    font-size:12px;
+    font-size:0.75rem;
+    margin:0;
+    margin-left:80px;
+}
+.ui.attached.label.up{
+    z-index:999;
+    background: transparent;
+}
 /*label*/
 .ui.type.label{
     background-color:#47a447;
@@ -188,6 +209,19 @@ span.select:focus{
     padding:0 7px!important;
     border-radius:.325em;
     text-transform: uppercase;
+}
+/*accordion*/
+.ui.basic.attached.accordion{
+    width:inherit;
+}
+.ui.basic.attached.accordion .title{
+    position:absolute;
+    right:10px;
+    top:127px;
+    padding:0;
+    font-size:14px;
+    font-size:0.875rem;
+    text-align:right;
 }
 /*footer start*/
 footer {
