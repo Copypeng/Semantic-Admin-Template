@@ -163,7 +163,7 @@ header .user{
     margin-right:14px;
     margin-right:0.875rem;
 }
-.ui.device.segment a.sensorEdit:hover{
+.ui.device.segment a.sensorEdit:hover, .ui.basic.attached.accordion .content a:hover,.ui.device.segment a.sensorEdit:focus, .ui.basic.attached.accordion .content a:focus{
     color:#333;
 }
 .ui.device.segment a:hover, .ui.device.segment a:focus{
@@ -171,9 +171,6 @@ header .user{
 }
 .ui.device.segment a.externalUrl:hover, .ui.device.segment a.externalUrl:focus{
     text-decoration:underline;
-}
-span.select:focus{
-
 }
 .ui.vertical.center.segment{
     text-align:center;
@@ -210,11 +207,16 @@ span.select:focus{
     border-radius:.325em;
     text-transform: uppercase;
 }
+.ui.label.error{
+    border-color:#D24B4C;
+    color:#fff;
+}
 /*accordion*/
 .ui.basic.attached.accordion{
     width:inherit;
 }
 .ui.basic.attached.accordion .title{
+    color:#007ad5;
     position:absolute;
     right:10px;
     top:127px;
@@ -222,6 +224,12 @@ span.select:focus{
     font-size:14px;
     font-size:0.875rem;
     text-align:right;
+}
+.ui.basic.attached.accordion .content{
+    margin:0 3%;
+    border-top:1px solid rgba(204, 204, 204, 0.34);
+    font-size:14px;
+    font-size:0.875rem;
 }
 /*footer start*/
 footer {
