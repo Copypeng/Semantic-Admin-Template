@@ -102,7 +102,7 @@
                     传感器列表
                 </div>
                 <!--the sensor info-->
-                <div class="ui middle aligned device grid segment">
+                <div class="ui middle aligned device grid segment dimmable">
                     <div class="ten wide column">
                         <div class="ui left corner label" data-variation="inverted">
                             <div class="text">正常</div>
@@ -149,13 +149,13 @@
                     </div>
                 </div>
                 <!--another sensor-->
-                <div class="ui middle aligned device grid segment">
+               <div class="ui middle aligned device grid segment">
                     <div class="ten wide column">
                         <div class="ui left corner label error" data-variation="inverted">
                             <div class="text">异常</div>
                         </div>
                         <div class="ui info segment">
-                                <h5 class="ui header">传感器01 <span class="ui type label">数据型</span>
+                                <h5 class="ui header">传感器02 <span class="ui type label">开关型</span>
                                 </h5>
 								<p>标示ID： <span class="stress">2343</span></p>
                                 <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
@@ -165,19 +165,10 @@
 				        </div>
                     </div>
                     <div class="six wide center aligned column">
-                        <a class="ui top right attached label up"><i class="chart basic icon"></i>图表</a>
-                        <div class="ui data segment">
-                            <p class="data">24.4</p>
-                            <p class="unit">摄氏度 / °C</p>
-                        </div>
-                    </div>
-                    <div class="ui basic attached accordion">
-                        <div class="title">
-                            <i class="dropdown icon"></i>动作触发
-                         </div>
-                        <div class="content">
-                              这是内容
-                        </div>
+                            <div class="ui huge toggle checkbox">
+                                <input type="checkbox"  id="unique-id">
+                                <label for="unique-id"></label>
+                            </div>
                     </div>
                 </div>
 
@@ -207,6 +198,17 @@
             </div>
         </div>
     </div>
+</div>
+<!--the dimmer -->
+<div class="ui dimmer">
+  <div class="content">
+    <div class="center">
+      <h2 class="ui inverted icon header">
+        <i class="icon circular inverted emphasized red heart"></i>
+        这里显示图表！
+      </h2>
+    </div>
+  </div>
 </div>
 <!--footer begin-->
 <footer>
@@ -244,6 +246,8 @@
         $('.ui.accordion')
         .accordion()
         ;
+        $('.ui.dimmer')
+            .dimmer('attach events','.label.up','show');
 	});
 </script>
 </body>
