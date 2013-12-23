@@ -116,7 +116,8 @@
 				        </div>
                     </div>
                     <div class="five wide center aligned column">
-                        <div class="ui top right attached label up"><a href=""><i class="chart basic icon">图表</i></a></div>
+                        <div class="ui top right attached label show" style="display:block;"><a><i class="chart basic icon"></i>图表</a></div>
+                        <div class="ui top right attached label hide" style="display:none;"><a><i class="remove icon"></i>关闭</a></div>
                         <div class="ui data segment">
                               <p class="data">24.4</p>
                               <p class="unit">摄氏度 / °C</p>
@@ -145,6 +146,17 @@
                                  <div class="ui red tiny addaction button"><i class="add icon"></i>添加触发
                                 </div>
                              </div>
+                        </div>
+                    </div>
+                    <div class="chartShow">
+                        <div class="ui inverted dimmer">
+                            <div class="content">
+                                <div class="center">
+                                    <h2 class="ui inverted icon header">
+                                        这里是图表！
+                                    </h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -235,8 +247,10 @@
         $('.ui.accordion')
         .accordion()
         ;
-        $('.ui.dimmer')
-            .dimmer('attach events','.label.up','show');
+
+        $('.show').click(function(){
+            $('.ui.dimmer').toggleClass('active');
+        });
 	});
 </script>
 </body>
