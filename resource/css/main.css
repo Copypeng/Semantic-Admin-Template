@@ -159,6 +159,10 @@ header .user{
 .ui.device.segment a.externalUrl{
     color:#007ad5;
 }
+.ui.device.segment .sensorAction{
+    margin-top:8px;
+    margin-top:0.5rem;
+}
 .ui.device.segment a.sensorEdit{
     margin-right:14px;
     margin-right:0.875rem;
@@ -176,10 +180,12 @@ header .user{
     text-align:center;
 }
 .ui.data.segment{
+    margin:1rem auto;
     background: transparent;
     box-shadow: none;
     -webkit-box-shadow: none;
     line-height:1.2;
+    text-align:center;
 }
 .ui.data.segment p.data{
     font-size:48px;
@@ -190,17 +196,26 @@ header .user{
     font-size:12px;
     font-size:0.75rem;
     margin:0;
-    margin-left:80px;
 }
+.ui.info.segment{
+    padding-bottom:8px;
+    padding-bottom:0.5rem;
+}
+/* ui header*/
+h5.ui.header.near{
+    margin-bottom:8px;
+    margin-bottom:0.5rem;
+}
+/*label*/
 .ui.attached.label.up{
     z-index:999;
     background: transparent;
+    color:#333;
 }
-/*label*/
 .ui.type.label{
     background-color:#47a447;
     border-color:#47a447;
-    color:#fff;
+    color:#fff;`
     font-size:12px;
     font-size:0.75rem;
     padding:0 7px!important;
@@ -214,22 +229,12 @@ header .user{
 /*accordion*/
 .ui.basic.attached.accordion{
     width:inherit;
+    padding-left:14px;
+    padding-right:14px;
 }
 .ui.basic.attached.accordion .title{
-    color:#007ad5;
-    position:absolute;
-    right:10px;
-    top:127px;
-    padding:0;
-    font-size:14px;
-    font-size:0.875rem;
-    text-align:right;
-}
-.ui.basic.attached.accordion .content{
-    margin:0 3%;
-    border-top:1px solid rgba(204, 204, 204, 0.34);
-    font-size:14px;
-    font-size:0.875rem;
+    margin:0;
+    padding-top:0;
 }
 /*footer start*/
 footer {

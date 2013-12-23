@@ -102,49 +102,49 @@
                     传感器列表
                 </div>
                 <!--the sensor info-->
-                <div class="ui middle aligned device grid segment dimmable">
-                    <div class="ten wide column">
+                <div class="ui middle aligned device grid segment">
+                    <div class="eleven wide column">
                         <div class="ui left corner label" data-variation="inverted">
                             <div class="text">正常</div>
                         </div>
                         <div class="ui info segment">
-                                <h5 class="ui header">传感器01 <span class="ui type label">数据型</span>
+                                <h5 class="ui header near">传感器01 <span class="ui type label">数据型</span>
                                 </h5>
 								<p>标示ID： <span class="stress">2343</span></p>
                                 <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
                             <p>API 地址： http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</p>
-                            <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
-                            <a class="sensorEdit"><i class="trash icon"></i>删除</a>
 				        </div>
                     </div>
-                    <div class="six wide center aligned column">
-                        <a class="ui top right attached label up"><i class="chart basic icon"></i>图表</a>
+                    <div class="five wide center aligned column">
+                        <div class="ui top right attached label up"><a href=""><i class="chart basic icon">图表</i></a></div>
                         <div class="ui data segment">
-                            <p class="data">24.4</p>
-                            <p class="unit">摄氏度 / °C</p>
+                              <p class="data">24.4</p>
+                              <p class="unit">摄氏度 / °C</p>
                         </div>
                     </div>
-                    <div class="ui basic attached accordion">
-                        <div class="title">
-                            <i class="dropdown icon"></i>动作触发
-                         </div>
+                    <div class="ui basic attached accordion action">
+                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit"><i class="trash icon"></i>删除</a>
+                        <a class="title sensorEdit">
+                               <i class="dropdown icon"></i>触发动作
+                        </a>
                         <div class="content">
-                              <table class="ui basic table">
-                                  <tr>
-                                    <td>当值大于50时，执行动作01</td>
-                                    <td><a><i class="edit icon"></i>编辑</a></td>
-                                    <td><a><i class="trash icon"></i>删除</a></td>
-                                  </tr>
-                                  <tr>
-                                    <td>当值大于60时，执行动作02</td>
-                                    <td><a><i class="edit icon"></i>编辑</a></td>
-                                    <td><a><i class="trash icon"></i>删除</a></td>
-                                  </tr>
+                               <table class="ui basic table">
+                                <tr>
+                                      <td>当值大于50时，执行动作01</td>
+                                      <td><a><i class="edit icon"></i>编辑</a></td>
+                                      <td><a><i class="trash icon"></i>删除</a></td>
+                                   </tr>
+                                <tr>
+                                     <td>当值大于60时，执行动作02</td>
+                                     <td><a><i class="edit icon"></i>编辑</a></td>
+                                     <td><a><i class="trash icon"></i>删除</a></td>
+                                 </tr>
                               </table>
-                            <div class="ui vertical segment">
-                                <div class="ui red tiny addaction button"><i class="add icon"></i>添加触发
+                              <div class="ui vertical segment">
+                                 <div class="ui red tiny addaction button"><i class="add icon"></i>添加触发
                                 </div>
-                            </div>
+                             </div>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
                             <div class="text">异常</div>
                         </div>
                         <div class="ui info segment">
-                                <h5 class="ui header">传感器02 <span class="ui type label">开关型</span>
+                                <h5 class="ui header near">传感器02 <span class="ui type label">开关型</span>
                                 </h5>
 								<p>标示ID： <span class="stress">2343</span></p>
                                 <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
@@ -198,17 +198,6 @@
             </div>
         </div>
     </div>
-</div>
-<!--the dimmer -->
-<div class="ui dimmer">
-  <div class="content">
-    <div class="center">
-      <h2 class="ui inverted icon header">
-        <i class="icon circular inverted emphasized red heart"></i>
-        这里显示图表！
-      </h2>
-    </div>
-  </div>
 </div>
 <!--footer begin-->
 <footer>
