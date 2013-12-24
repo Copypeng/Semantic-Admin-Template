@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>设备管理——Yeelink</title>
-    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
 </head>
 <body>
 <div class="page">
@@ -103,12 +103,23 @@
                 </div>
                 <!--the sensor info-->
                 <div class="ui middle aligned device grid segment">
+                    <!--<div class="ui basic attached accordion showChart">
+                        <a class="title">
+                               <i class="chart basic icon"></i>图表
+                        </a>
+                        <div class="content" style="text-align: center;">
+                            	<i class="massive chart basic icon"></i>
+                            	这里是图表！
+                        </div>
+                    </div>-->
                     <div class="eleven wide column">
                         <div class="ui left corner label" data-variation="inverted">
                             <div class="text">正常</div>
                         </div>
                         <div class="ui info segment">
-                                <h5 class="ui header near">传感器01 <span class="ui type label">数据型</span>
+                                <h5 class="ui header near">
+                                    <img src="resource/images/icon_data.png">
+                                    传感器01 <span class="ui type label">数据型</span>
                                 </h5>
 								<p>标示ID： <span class="stress">2343</span></p>
                                 <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
@@ -161,25 +172,207 @@
                 </div>
                 <!--another sensor-->
                <div class="ui middle aligned device grid segment">
-                    <div class="ten wide column">
+                    <div class="eleven wide column">
                         <div class="ui left corner label error" data-variation="inverted">
                             <div class="text">异常</div>
                         </div>
                         <div class="ui info segment">
-                                <h5 class="ui header near">传感器02 <span class="ui type label">开关型</span>
+                                <h5 class="ui header near">
+                                    <img src="resource/images/icon_switch.png">
+                                    传感器02 <span class="ui type label">开关型</span>
                                 </h5>
 								<p>标示ID： <span class="stress">2343</span></p>
                                 <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
                             <p>API 地址： http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</p>
-                            <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
-                            <a class="sensorEdit"><i class="trash icon"></i>删除</a>
 				        </div>
                     </div>
-                    <div class="six wide center aligned column">
+                    <div class="five wide center aligned column">
+                        <div class="ui data segment">
                             <div class="ui huge toggle checkbox">
                                 <input type="checkbox"  id="unique-id">
                                 <label for="unique-id"></label>
                             </div>
+                           </div>
+                    </div>
+                   <div class="ui basic attached accordion action">
+                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit"><i class="trash icon"></i>删除</a>
+                   </div>
+                </div>
+
+                <!--another sensor-->
+               <div class="ui middle aligned device grid segment">
+                    <div class="eleven wide column">
+                        <div class="ui left corner label error" data-variation="inverted">
+                            <div class="text">异常</div>
+                        </div>
+                        <div class="ui info segment">
+                                <h5 class="ui header near">
+                                    <img src="resource/images/icon_gps.png">
+                                    传感器03 <span class="ui type label">GPS型</span>
+                                </h5>
+								<p>标示ID： <span class="stress">2343</span></p>
+                                <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
+                            <p>API 地址： http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</p>
+				        </div>
+                    </div>
+                    <div class="five wide center aligned column">
+                       <!-- <div class="ui top right attached label show"><a><i class="chart basic icon"></i>图表</a></div>-->
+                        <div class="ui data segment">
+                          <p class="gps">36.3, 117.1</p>
+                          <p class="unit">经纬度</p>
+                        </div>
+                    </div>
+                   <div class="ui basic attached accordion action">
+                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit"><i class="trash icon"></i>删除</a>
+                        <a class="title sensorEdit">
+                               <i class="dropdown icon"></i>触发动作
+                        </a>
+                        <div class="content">
+                               <table class="ui basic table">
+                                <tr>
+                                      <td>当值大于50时，执行动作01</td>
+                                      <td><a><i class="edit icon"></i>编辑</a></td>
+                                      <td><a><i class="trash icon"></i>删除</a></td>
+                                   </tr>
+                                <tr>
+                                     <td>当值大于60时，执行动作02</td>
+                                     <td><a><i class="edit icon"></i>编辑</a></td>
+                                     <td><a><i class="trash icon"></i>删除</a></td>
+                                 </tr>
+                              </table>
+                              <div class="ui vertical segment">
+                                 <div class="ui red tiny addaction button"><i class="add icon"></i>添加触发
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!--another sensor-->
+               <div class="ui middle aligned device grid segment">
+                    <div class="eleven wide column">
+                        <div class="ui left corner label error" data-variation="inverted">
+                            <div class="text">异常</div>
+                        </div>
+                        <div class="ui info segment">
+                                <h5 class="ui header near">
+                                    <img src="resource/images/icon_pic.png">
+                                    传感器04 <span class="ui type label">图片型</span>
+                                </h5>
+								<p>标示ID： <span class="stress">2343</span></p>
+                                <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
+                            <p>API 地址： http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</p>
+				        </div>
+                    </div>
+                    <div class="five wide center aligned column">
+                       <!-- <div class="ui top right attached label show"><a><i class="chart basic icon"></i>图表</a></div>-->
+                        <div class="ui data segment">
+                          <img src="resource/images/avatar-default.gif" height="60px" />
+                        </div>
+                    </div>
+                   <div class="ui basic attached accordion action">
+                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit"><i class="trash icon"></i>删除</a>
+                    </div>
+                </div>
+
+                <!--another sensor-->
+               <div class="ui middle aligned device grid segment">
+                    <div class="eleven wide column">
+                        <div class="ui left corner label" data-variation="inverted">
+                            <div class="text">正常</div>
+                        </div>
+                        <div class="ui info segment">
+                                <h5 class="ui header near">
+                                    <img src="resource/images/icon_pic.png">
+                                    传感器04 <span class="ui type label">泛传感器型</span>
+                                </h5>
+								<p>标示ID： <span class="stress">2343</span></p>
+                                <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
+                            <p>API 地址： http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</p>
+				        </div>
+                    </div>
+                    <div class="five wide center aligned column">
+                       <!-- <div class="ui top right attached label show"><a><i class="chart basic icon"></i>图表</a></div>-->
+                        <div class="ui data segment">
+
+                        </div>
+                    </div>
+                   <div class="ui basic attached accordion action">
+                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit"><i class="trash icon"></i>删除</a>
+                        <a class="title sensorEdit">
+                               <i class="dropdown icon"></i>触发动作
+                        </a>
+                        <div class="content">
+                               <table class="ui basic table">
+                                <tr>
+                                      <td>当值大于50时，执行动作01</td>
+                                      <td><a><i class="edit icon"></i>编辑</a></td>
+                                      <td><a><i class="trash icon"></i>删除</a></td>
+                                   </tr>
+                                <tr>
+                                     <td>当值大于60时，执行动作02</td>
+                                     <td><a><i class="edit icon"></i>编辑</a></td>
+                                     <td><a><i class="trash icon"></i>删除</a></td>
+                                 </tr>
+                              </table>
+                              <div class="ui vertical segment">
+                                 <div class="ui red tiny addaction button"><i class="add icon"></i>添加触发
+                                </div>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--another sensor-->
+               <div class="ui middle aligned device grid segment">
+                    <div class="eleven wide column">
+                        <div class="ui left corner label" data-variation="inverted">
+                            <div class="text">正常</div>
+                        </div>
+                        <div class="ui info segment">
+                                <h5 class="ui header near">
+                                    <img src="resource/images/icon_bird.png">
+                                    传感器04 <span class="ui type label">微博抓取型</span>
+                                </h5>
+								<p>标示ID： <span class="stress">2343</span></p>
+                                <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
+                            <p>API 地址： http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</p>
+				        </div>
+                    </div>
+                    <div class="five wide center aligned column">
+                       <!-- <div class="ui top right attached label show"><a><i class="chart basic icon"></i>图表</a></div>-->
+                        <div class="ui data segment">
+
+                        </div>
+                    </div>
+                   <div class="ui basic attached accordion action">
+                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit"><i class="trash icon"></i>删除</a>
+                        <a class="title sensorEdit">
+                               <i class="dropdown icon"></i>触发动作
+                        </a>
+                        <div class="content">
+                               <table class="ui basic table">
+                                <tr>
+                                      <td>当值大于50时，执行动作01</td>
+                                      <td><a><i class="edit icon"></i>编辑</a></td>
+                                      <td><a><i class="trash icon"></i>删除</a></td>
+                                   </tr>
+                                <tr>
+                                     <td>当值大于60时，执行动作02</td>
+                                     <td><a><i class="edit icon"></i>编辑</a></td>
+                                     <td><a><i class="trash icon"></i>删除</a></td>
+                                 </tr>
+                              </table>
+                              <div class="ui vertical segment">
+                                 <div class="ui red tiny addaction button"><i class="add icon"></i>添加触发
+                                </div>
+                             </div>
+                        </div>
                     </div>
                 </div>
 
@@ -248,8 +441,8 @@
         ;
 
         $('.show').click(function(){
-            $('.show').toggleClass('active');
             $('.chartShow').toggleClass('active');
+            $('.show').toggleClass('active');
         });
 	});
 </script>

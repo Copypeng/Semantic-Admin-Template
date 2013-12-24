@@ -181,17 +181,20 @@ header .user{
     text-align:center;
 }
 .ui.data.segment{
-    margin:1rem auto;
     background: transparent;
     box-shadow: none;
     -webkit-box-shadow: none;
     line-height:1.2;
     text-align:center;
+    margin-top:22px !important;
 }
 .ui.data.segment p.data{
     font-size:48px;
     font-size:3rem;
-    margin:0;
+}
+.ui.data.segment p.gps{
+    font-size:32px;
+    font-size:2rem;
 }
 .ui.data.segment p.unit{
     font-size:12px;
@@ -207,19 +210,26 @@ h5.ui.header.near{
     margin-bottom:8px;
     margin-bottom:0.5rem;
 }
+h5.ui.header.near img{
+    height:18px;
+    vertical-align:top;
+}
 /*label*/
 .ui.attached.label.show{
     z-index:999;
     background: transparent;
     color:#333;
+    margin-right:14px;
 }
 .ui.attached.label.show.active{
-    background: rgba(255, 255, 255, 0.85);
-    -webkit-box-shadow:1px 0px 3px #ccc;
-    box-shadow: 1px 0px 3px #ccc;
+    background:#fff;
     z-index: 999;
     color: #333;
     border-radius: 0!important;
+    border-style:solid;
+    border-color:#ccc;
+    border-width:1px 1px 0px;
+    z-index:9999;
 }
 .ui.type.label{
     background-color:#47a447;
@@ -238,21 +248,31 @@ h5.ui.header.near{
 /*accordion*/
 .ui.basic.attached.accordion{
     width:inherit;
-    padding-left:14px;
-    padding-right:14px;
+    padding:0 28px 14px;
 }
-.ui.basic.attached.accordion .title{
+.ui.basic.attached.accordion.showChart .title{
+    font-size:12px;
+    font-size:0.75rem;
+    position:absolute;
+    right:32px;
+    z-index:999;
+}
+.ui.basic.attached.accordion.action .title{
     margin:0;
     padding-top:0;
 }
+.ui.basic.attached.accordion.action .content{
+    margin-top:8px;
+    border-top:1px solid rgba(204, 204, 204, 0.3);
+}
 /*chart*/
 .chartShow{
-    position:absolute;
-    top:34px;
-    margin-left:2%;
-    width:98%;
-    height:100%;
-    display:none;
+    position: absolute;
+    top: 38px;
+    right: 14px;
+    width: 90%;
+    height: 100%;
+    display: none;
 }
 .active.chartShow{
     display:block;

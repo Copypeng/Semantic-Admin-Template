@@ -12652,9 +12652,8 @@ a.ui.teal.label:hover:before {
 ---------------*/
 
 .ui.inverted.dimmer {
-  background-color: rgba(255, 255, 255, 0.95);
-  -webkit-box-shadow:1px 3px 2px #ccc;
-  box-shadow: 1px 3px 2px #ccc;
+  background-color: #fff;
+  border: 1px solid #ccc;
 }
 
 .ui.inverted.dimmer > .content > * {
