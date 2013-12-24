@@ -1505,6 +1505,7 @@ body > .ui.grid {
   height: 100%;
   background-image: -webkit-gradient(linear, top left, bottom left, from(rgba(0, 0, 0, 0.05)), color-stop(50%, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.05)));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.05)), color-stop(50%, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.05)));
   background-image: linear-gradient(rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.05) 100%);
 }
 
@@ -1821,6 +1822,7 @@ body > .ui.grid {
   height: 1px;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.1) 1.5em, rgba(0, 0, 0, 0.03) 100%);
   background-image: -webkit-gradient(linear, top left, top right, from(rgba(0, 0, 0, 0.03)), color-stop(1.5em, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.03)));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.03)), color-stop(1.5em, rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.03)));
   background-image: linear-gradient(left, rgba(0, 0, 0, 0.03) 0%, rgba(0, 0, 0, 0.1) 1.5em, rgba(0, 0, 0, 0.03) 100%);
 }
 
@@ -2588,12 +2590,14 @@ body > .ui.grid {
 .ui.inverted.menu .item:before {
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.03) 100%);
   background-image: -webkit-gradient(linear, top left, bottom left, from(rgba(255, 255, 255, 0.03)), color-stop(50%, rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.03)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.03)), color-stop(50%, rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.03)));
   background-image: linear-gradient(rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.03) 100%);
 }
 
 .ui.vertical.inverted.menu .item:before {
   background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.03) 100%);
   background-image: -webkit-gradient(linear, top left, top right, from(rgba(255, 255, 255, 0.03)), color-stop(50%, rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.03)));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.03)), color-stop(50%, rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.03)));
   background-image: linear-gradient(left, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.03) 100%);
 }
 
@@ -5144,6 +5148,7 @@ i.massive.basic.icon {
   text-decoration: none;
   background-image: -webkit-gradient(linear, top left, bottom left, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.05)));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.05)));
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.05));
   border-radius: 0.25em;
   -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.08) inset;
@@ -5185,6 +5190,7 @@ i.massive.basic.icon {
 .ui.button:hover {
   background-image: -webkit-gradient(linear, top left, bottom left, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.08)));
   background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.08)));
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.08));
   color: rgba(0, 0, 0, 0.7);
 }
@@ -11227,6 +11233,7 @@ a.ui.teal.label:hover:before {
 --------------------*/
 
 .ui.device.segment, .ui.blue.segment ,.ui.info.segment{
+  -webkit-box-shadow:none;
   box-shadow:none;
   -webkit-box-shadow:none;
   border-radius:0;
@@ -11371,6 +11378,7 @@ a.ui.teal.label:hover:before {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
   background-image: -webkit-gradient(linear, top left, bottom left, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)));
   background-image: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%);
   color: #FAFAFA;
 }
@@ -11380,6 +11388,7 @@ a.ui.teal.label:hover:before {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
   background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
   background-image: -webkit-gradient(linear, top left, bottom left, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.6)));
   background-image: linear-gradient(rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.6) 100%);
   color: #EEEEEE;
 }
@@ -12643,7 +12652,9 @@ a.ui.teal.label:hover:before {
 ---------------*/
 
 .ui.inverted.dimmer {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow:1px 3px 2px #ccc;
+  box-shadow: 1px 3px 2px #ccc;
 }
 
 .ui.inverted.dimmer > .content > * {
@@ -12861,6 +12872,7 @@ a.ui.teal.label:hover:before {
   border-color: transparent !important;
   -webkit-box-shadow: none;
   -moz-shadow: none;
+  -webkit-box-shadow: none;
   box-shadow: none;
   z-index: 12;
 }
@@ -14938,6 +14950,8 @@ body {
 .ui.slide.down.transition.in {
   -webkit-animation-name: slide;
   animation-name: slide;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;
   -webkit-transform-origin: 50% 0%;
@@ -14946,6 +14960,8 @@ body {
 .ui.slide.down.transition.out {
   -webkit-animation-name: slideOut;
   animation-name: slideOut;
+  -webkit-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
   transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;
   -webkit-transform-origin: 50% 0%;
@@ -14954,6 +14970,8 @@ body {
 .ui.slide.up.transition.in {
   -webkit-animation-name: slide;
   animation-name: slide;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
   -webkit-transform-origin: 50% 100%;
@@ -14962,6 +14980,8 @@ body {
 .ui.slide.up.transition.out {
   -webkit-animation-name: slideOut;
   animation-name: slideOut;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
   transform-origin: 50% 100%;
   -ms-transform-origin: 50% 100%;
   -webkit-transform-origin: 50% 100%;

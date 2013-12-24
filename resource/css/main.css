@@ -213,6 +213,14 @@ h5.ui.header.near{
     background: transparent;
     color:#333;
 }
+.ui.attached.label.show.active{
+    background: rgba(255, 255, 255, 0.85);
+    -webkit-box-shadow:1px 0px 3px #ccc;
+    box-shadow: 1px 0px 3px #ccc;
+    z-index: 999;
+    color: #333;
+    border-radius: 0!important;
+}
 .ui.type.label{
     background-color:#47a447;
     border-color:#47a447;
@@ -240,9 +248,14 @@ h5.ui.header.near{
 /*chart*/
 .chartShow{
     position:absolute;
-    top:38px;
-    width:100%;
+    top:34px;
+    margin-left:2%;
+    width:98%;
     height:100%;
+    display:none;
+}
+.active.chartShow{
+    display:block;
 }
 /*footer start*/
 footer {
