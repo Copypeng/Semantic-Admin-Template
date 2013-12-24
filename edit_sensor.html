@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编辑传感器——Yeelink</title>
+    <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
+</head>
+<body>
+<div class="page">
+<!--header begin-->
+<header>
+	<div class="bigcontainer">
+		<div id="logo">
+			<a href="./">yeelink用户中心</a>
+		</div>
+		<div class="user">
+			<div class="ui inline labeled icon top right pointing dropdown">
+			<img class="ui avatar image" src="resource/images/avatar-default.gif">
+			欢迎，$用户名
+			<i class="dropdown icon"></i>
+				<div class="menu">
+					<a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
+					<a class="item" href="/user/logout"><i class="sign out icon"></i>注销登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- the main menu-->
+<div class="ui teal inverted menu fluid">
+	<div class="bigcontainer">
+		<div class="right menu">
+			<a class="item" href="./index.html"><i class="home icon"></i>管理首页</a>
+			<a class="active item"><i class="sitemap icon"></i>设备</a>
+			<a class="item" href="user_profile.html"><i class="info icon"></i>账户</a>
+		</div>
+	</div>
+</div>
+<!--the main content begin-->
+	<div class="container">
+	<!--the content-->
+		<div class="ui grid">
+			<!--the vertical menu-->
+			<div class="four wide column">
+				<div class="verticalMenu">
+					<div class="ui vertical pointing menu fluid">
+  						<a class="item">
+							<i class="add icon"></i> 绑定新设备
+  						</a>
+  						<a class="active teal item">
+    						<i class="settings icon"></i> 我的设备
+  						</a>
+  						<a class="item">
+							<i class="terminal icon"></i> 设备动作
+  						</a>
+					</div>
+				</div>
+			</div>
+			<!--the newDevice form-->
+			<div class="twelve wide column">
+				<div class="pageHeader">
+					<div class="segment">
+						<h3 class="ui dividing header">
+  							<i class="large edit icon"></i>
+  							<div class="content">
+    							编辑传感器
+  							</div>
+						</h3>
+					</div>
+				</div>
+				<div class="ui form fluid vertical segment">
+					<form name="form" action="/user/new_sensor/" method="post">
+						<div class="two fields">
+							<div class="field">
+								<label>传感器名</label>
+								<div class="ui small left labeled icon input">
+									<input type="text" placeholder="给您的传感器起个容易记住的名字……" id="device_title" name="device_title" value=""/>
+									<i class="sitemap icon"></i>
+								</div>
+							</div>
+						</div>
+                        <div class="field">
+							<label>类型</label>
+							<div class="ui dropdown selection">
+      							<input type="hidden" name="gender" value="1">
+      							<div class="default text">数值型</div>
+      							<i class="dropdown icon"></i>
+      							<div class="menu" name="sensor_type" id="sensor_type">
+        							<div class="item active" data-value="数值型" value="0">数值型</div>
+        							<div class="item" data-value="开关型" value="5">开关型</div>
+                                    <div class="item" data-value="GPS型" value="6">GPS型</div>
+                                    <div class="item" data-value="泛传感器型" value="8">泛传感器型</div>
+                                    <div class="item" data-value="图像传感器型" value="9">图像传感器型</div>
+                                    <div class="item" data-value="微博抓取型" value="10">微博抓取型</div>
+      							</div>
+    						</div>
+						</div>
+                        <div class="two fields">
+                        	<div class="field">
+                            	<div class="field">
+                                    <label>标签（tags）</label>
+                                    <div class="ui small left labelen icon input">
+                                        <input type="text" placeholder="各关键词间用逗号(,)分隔" id="device_tags" name="device_tags"/>
+                                        <i class="tags icon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="field">
+							<label>描述</label>
+							<textarea placeholder="不超过30个字符……"></textarea>
+						</div>
+						<input class="ui small blue submit button" type="submit" value="保存">
+						<input class="ui small basic button" type="reset" value="取消">
+					</form>
+					<!--the form end-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer begin-->
+<footer>
+	<div id="copyrights">
+		<div class="inset">
+			<div class="bigcontainer">
+				<div class="fl">
+					<div class="logo"></div>
+					<p>&copy; 2020 青岛亿联客信息技术有限公司, 版权所有<br />
+<a href="http://www.miibeian.gov.cn" target="_blank">鲁ICP备12022271号</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="resource/javascript/framework.js"></script>
+<script type="text/javascript" src="resource/javascript/user_new_devices.js"></script>
+<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyC7a2MMoG2nkxwY6bmxjoULoiz2YTp43iI&sensor=false&language=cn"></script>
+</body>
+</html>

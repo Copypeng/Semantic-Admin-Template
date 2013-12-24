@@ -9623,7 +9623,7 @@ a.ui.label:hover:before {
   margin: 0em;
   top: 0em;
   left: 0em;
-  padding: 0.75em 1em;
+  padding:0.75em 1em;
   border-radius: 4px 4px 0em 0em;
 }
 

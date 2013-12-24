@@ -93,8 +93,8 @@
                     </div>
   					<div class="five wide center aligned column">
                         <div class="ui buttons">
-                            <div class="ui red button">添加传感器</div>
-                            <div class="ui blue button">编辑</div>
+                            <a class="ui red button" href="./new_sensor.html">添加传感器</a>
+                            <a class="ui blue button" href="./edit_device.html">编辑</a>
                         </div>
   					</div>
 				</div>
@@ -127,14 +127,16 @@
 				        </div>
                     </div>
                     <div class="five wide center aligned column">
-                        <div class="ui top right attached label show"><a><i class="chart basic icon"></i>图表</a></div>
+                        <div class="ui top right attached label show">
+                            <a><i class="chart basic icon"></i>图表</a>
+                        </div>
                         <div class="ui data segment">
                               <p class="data">24.4</p>
                               <p class="unit">摄氏度 / °C</p>
                         </div>
                     </div>
                     <div class="ui basic attached accordion action">
-                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit" href="./edit_sensor.html"><i class="edit icon"></i>编辑</a>
                         <a class="sensorEdit"><i class="trash icon"></i>删除</a>
                         <a class="title sensorEdit">
                                <i class="dropdown icon"></i>触发动作
@@ -195,7 +197,7 @@
                            </div>
                     </div>
                    <div class="ui basic attached accordion action">
-                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit" href="./edit_sensor.html"><i class="edit icon"></i>编辑</a>
                         <a class="sensorEdit"><i class="trash icon"></i>删除</a>
                    </div>
                 </div>
@@ -224,7 +226,7 @@
                         </div>
                     </div>
                    <div class="ui basic attached accordion action">
-                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit" href="./edit_sensor.html"><i class="edit icon"></i>编辑</a>
                         <a class="sensorEdit"><i class="trash icon"></i>删除</a>
                         <a class="title sensorEdit">
                                <i class="dropdown icon"></i>触发动作
@@ -273,7 +275,7 @@
                         </div>
                     </div>
                    <div class="ui basic attached accordion action">
-                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit" href="./edit_sensor.html"><i class="edit icon"></i>编辑</a>
                         <a class="sensorEdit"><i class="trash icon"></i>删除</a>
                     </div>
                 </div>
@@ -301,7 +303,7 @@
                         </div>
                     </div>
                    <div class="ui basic attached accordion action">
-                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit" href="./edit_sensor.html"><i class="edit icon"></i>编辑</a>
                         <a class="sensorEdit"><i class="trash icon"></i>删除</a>
                         <a class="title sensorEdit">
                                <i class="dropdown icon"></i>触发动作
@@ -312,7 +314,7 @@
                                       <td>当值大于50时，执行动作01</td>
                                       <td><a><i class="edit icon"></i>编辑</a></td>
                                       <td><a><i class="trash icon"></i>删除</a></td>
-                                   </tr>
+                                 </tr>
                                 <tr>
                                      <td>当值大于60时，执行动作02</td>
                                      <td><a><i class="edit icon"></i>编辑</a></td>
@@ -350,7 +352,7 @@
                         </div>
                     </div>
                    <div class="ui basic attached accordion action">
-                        <a class="sensorEdit"><i class="edit icon"></i>编辑</a>
+                        <a class="sensorEdit" href="./edit_sensor.html"><i class="edit icon"></i>编辑</a>
                         <a class="sensorEdit"><i class="trash icon"></i>删除</a>
                         <a class="title sensorEdit">
                                <i class="dropdown icon"></i>触发动作
@@ -441,8 +443,8 @@
         ;
 
         $('.show').click(function(){
-            $('.chartShow').toggleClass('active');
             $('.show').toggleClass('active');
+            $('.chartShow').toggleClass('active');
         });
 	});
 </script>
