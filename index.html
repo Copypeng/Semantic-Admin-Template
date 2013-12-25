@@ -2,11 +2,11 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
     <title>用户中心</title>
-    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
 </head>
 <body>
 <div class="page">
@@ -34,8 +34,8 @@
 	<div class="bigcontainer">
 		<div class="right menu">
 			<a class="active item" href="./index.html"><i class="home icon"></i>管理首页</a>
-			<a class="item"><i class="sitemap icon"></i>设备</a>
-			<a class="item" href="user_profile.html"><i class="info icon"></i>账户</a>
+			<a class="item" href="./devices_list.html"><i class="sitemap icon"></i>设备</a>
+			<a class="item" href="./user_profile.html"><i class="info icon"></i>账户</a>
 		</div>
 	</div>
 </div>
@@ -54,33 +54,32 @@
 				</h3>
 			</div>
 		</div>
-		<div class="ui small message" id="showApiKey">
-        	<div class="content">
-            	<div class="ui form segment">
-               		<div class="inline field">
-                    	<label style="font-size:16px;"><i class="key large icon"></i> 您的API Key : </label>
+       <div class="ui small message" id="showApiKey">
+           <div class="ui form segment">
+                <div class="inline field">
+                    <label>您的API Key :</label>
+                    <div class="ui small left icon input short">
+                        <i class="key icon"></i>
                         <input type="text" value="793jIEGJjkjkljfUI3JRTJOIO" readonly="readonly" id="apiKey">
-                        <div class="ui buttons">
-                        	<a class="ui small positive button" id="copy-apiKey" href="#">复制</a>
-							<a class="ui small button">管理</a>
-                         </div>
-                   		<a id="deviceQuickButton" class="ui red small labeled icon button" href="#">
+                    </div>
+                        <a class="ui mini green button" id="copy-apiKey" href="#">复制</a>
+                        <a class="ui mini button" href=./apikey_manage.html>管理</a>
+                    <a id="deviceQuickButton" class="ui red small labeled icon button" href="./devices_list.html">
                         <i class="settings icon"></i>管理所有设备
-                        </a>
-                     </div>
-                  </div>
-   			</div>
-        </div>
+                    </a>
+                 </div>
+          </div>
+      </div>
 	<!--device list-->
 	<div class="ui three column grid" id="indexList">
 		<div class="row">
 			<div class="column">
 				<div class="ui blue segment">
-					<a href="#" class="content">
+					<a href="./device.html" class="content">
 						<h4 class="deviceName">设备名01</h4>
 						<p class="deviceId">设备ID：234</p>
 						<p class="deviceDescription">这里是设备描述。</p>
-						<P>设备状态：<span class="deviceStatusOk"></span></P>
+						<P>设备状态：</P>
 					</a>
 				</div>
 			</div>
@@ -90,7 +89,7 @@
 						<h4 class="deviceName">设备名02</h4>
 						<p class="deviceId">设备ID：4354</p>
 						<p class="deviceDescription">这里是设备描述。</p>
-						<P>设备状态：<span class="deviceStatusOk"></span></P>
+						<P>设备状态：</P>
 					</a>
 				</div>
 			</div>

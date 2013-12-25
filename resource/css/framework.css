@@ -5130,7 +5130,7 @@ i.massive.basic.icon {
 
 .ui.button {
   cursor: pointer;
-  /*display: inline-block;*/
+  display: inline-block;
   vertical-align: middle;
   min-height: 1em;
   outline: none;
@@ -9256,6 +9256,10 @@ img.ui.image {
   padding-right: 1.2em !important;
 }
 
+.ui.left.icon.input.short{
+	width:30%;
+}
+
 /* Focus */
 
 .ui.icon.input > input:focus ~ .icon {
@@ -9390,8 +9394,8 @@ img.ui.image {
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: background 0.1s linear;
-  transition: background 0.1s linear;
+/*  -webkit-transition: background 0.1s linear;
+  transition: background 0.1s linear;*/
 }
 
 .ui.label:first-child {

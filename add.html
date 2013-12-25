@@ -2,11 +2,11 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
     <title>绑定新设备——Yeelink</title>
-    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
 </head>
 <body>
 <div class="page">
@@ -34,8 +34,8 @@
 	<div class="bigcontainer">
 		<div class="right menu">
 			<a class="item" href="./index.html"><i class="home icon"></i>管理首页</a>
-			<a class="active item"><i class="sitemap icon"></i>设备</a>
-			<a class="item" href="user_profile.html"><i class="info icon"></i>账户</a>
+			<a class="active item" href="./devices_list.html"><i class="sitemap icon"></i>设备</a>
+			<a class="item" href="./user_profile.html"><i class="info icon"></i>账户</a>
 		</div>
 	</div>
 </div>
@@ -47,13 +47,13 @@
 			<div class="four wide column">
 				<div class="verticalMenu">
 					<div class="ui vertical pointing menu fluid">
-  						<a class="active teal item">
+  						<a class="active teal item" href="./add.html">
 							<i class="add icon"></i> 绑定新设备
   						</a>
-  						<a class="item">
+  						<a class="item" href="./devices_list.html">
     						<i class="settings icon"></i> 我的设备
   						</a>
-  						<a class="item">
+  						<a class="item" href="./actions.html">
 							<i class="terminal icon"></i> 设备动作
   						</a>
 					</div>
@@ -74,18 +74,6 @@
 				</div>
 				<div class="ui form fluid vertical segment">
 					<form name="form" action="/user/new_device" method="post">
-						<div class="field">
-							<label>设备来源</label>
-							<div class="ui dropdown selection">
-      							<input type="hidden" name="gender" value="1">
-      							<div class="default text">自备设备</div>
-      							<i class="dropdown icon"></i>
-      							<div class="menu" id="device_manufacturer" >
-        							<div class="item active" data-value="自备设备" value="1">自备设备</div>
-        							<div class="item" data-value="Yeelink设备" value="0">Yeelink设备</div>
-      							</div>
-    						</div>
-						</div>
 						<div class="two fields">
 							<div class="field">
 								<label>设备名</label>
@@ -160,20 +148,22 @@
     						</div>
 						</div>
                         <div class="field">
-                        	<label>上传图片（可选）</label>
-                            <a class="ui green small button"><i class="add icon"></i>上传</a>
-                         </div>
+                            <a class="ui green small button" type="file"><i class="photos basic icon"></i>上传图片</a>
+                            <div class="ui pointing left label">
+      							可选.
+    						</div>
+                        </div>
 						<div class="field">
                         	<div class="ui radio checkbox">
-                                <input type="radio" name="pub" disabled="disabled" checked>
+                                <input type="radio" name="pub" checked>
                                 <label>公开</label>
                           	</div>
                             <div class="ui radio checkbox">
-                            	<input type="radio" name="pri" disabled="disabled">
+                            	<input type="radio" name="pri">
                             	<label>不公开</label>
                          	</div>
                             <div class="ui pointing left label">
-      							对于自备设备, 默认接入时是公开的. 
+      							对于个人普通用户, 默认接入是公开的.
     						</div>
                         </div>
 						<input class="ui small blue submit button" type="submit" value="保存">

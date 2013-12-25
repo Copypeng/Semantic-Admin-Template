@@ -104,8 +104,13 @@ header .user{
 	text-align:center;
 	top:50%;
 }
+#indexList h4.newDevice i.icon{
+    display:initial;
+}
 #indexList p{
 	margin:0;
+    font-size:14px;
+    font-size:0.875rem;
 }
 /*the device list*/
 .ui.device.segment p{

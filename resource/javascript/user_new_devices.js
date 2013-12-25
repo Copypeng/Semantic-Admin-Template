@@ -14,24 +14,6 @@ $(document).ready(function() {
         })
         ;
 
-	var validInput = true;
-
-	$("#device_manufacturer").change(function(){
-		switch($(this).val())
-		{
-			case "0": //yeelink
-				$("div.yeelink").show();
-				$("div.diy").hide();
-				break;
-			case "1":	//diy
-				$("div.yeelink").hide();
-				$("div.diy").show();
-				break;
-			default:
-				break;
-		}
-	});
-
 	Gmap();
 	function Gmap() {
 		var centerMarker = null; // 中心标记
@@ -74,26 +56,4 @@ $(document).ready(function() {
 		}
 	}
 
-	$("form").submit(function(e) {
-		validInput = true;
-
-		$("#device_title").blur();
-
-		switch($("#device_manufacturer").val())
-		{
-			case "0":
-				$("#device_tags").blur();
-				$("#device_loc_name").blur();
-			break;
-			case "1":
-				$("#device_tags").blur();
-				$("#device_loc_name").blur();
-				lat();
-			break;
-		}
-		$("#device_about").blur();
-		if(!validInput) {
-			e.preventDefault();
-		}
-	});
 });
