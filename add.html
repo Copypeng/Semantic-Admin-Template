@@ -159,12 +159,23 @@
 								</div>
     						</div>
 						</div>
+                        <div class="field">
+                        	<label>上传图片（可选）</label>
+                            <a class="ui green small button"><i class="add icon"></i>上传</a>
+                         </div>
 						<div class="field">
-    						<div class="ui checkbox">
-								<input type="checkbox">
-								<label>对于自备设备，默认接入是公开的</label>
-							</div>
-  						</div>
+                        	<div class="ui radio checkbox">
+                                <input type="radio" name="pub" disabled="disabled" checked>
+                                <label>公开</label>
+                          	</div>
+                            <div class="ui radio checkbox">
+                            	<input type="radio" name="pri" disabled="disabled">
+                            	<label>不公开</label>
+                         	</div>
+                            <div class="ui pointing left label">
+      							对于自备设备, 默认接入时是公开的. 
+    						</div>
+                        </div>
 						<input class="ui small blue submit button" type="submit" value="保存">
 						<input class="ui small basic button" type="reset" value="取消">
 					</form>

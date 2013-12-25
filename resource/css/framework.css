@@ -5130,7 +5130,7 @@ i.massive.basic.icon {
 
 .ui.button {
   cursor: pointer;
-  display: inline-block;
+  /*display: inline-block;*/
   vertical-align: middle;
   min-height: 1em;
   outline: none;
@@ -9019,8 +9019,10 @@ img.ui.image {
 
 .ui.medium.images .image,
 .ui.medium.images img,
+.ui.medium.image img,
 .ui.medium.image {
-  width: 300px;
+  max-width:285px !important;
+  height:160px;
   font-size: 1rem;
 }
 

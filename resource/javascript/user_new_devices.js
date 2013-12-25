@@ -7,9 +7,12 @@ $(document).ready(function() {
 
 	$('.ui.selection.dropdown')
   	.dropdown();
-
-	$('.ui.checkbox')
-  	.checkbox();
+    
+    $('.field .ui.image')
+      .dimmer({
+        on: 'hover'
+        })
+        ;
 
 	var validInput = true;
 

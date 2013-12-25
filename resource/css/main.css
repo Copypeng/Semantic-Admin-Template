@@ -28,6 +28,9 @@ a {
 	padding-bottom:16px;
 	padding-bottom:1rem;
 }
+.ui.radio.checkbox{
+    margin:16px 16px 8px 0 !important;
+}
 /*header start*/
 header{
 	position:relative;
@@ -277,6 +280,10 @@ h5.ui.header.near img{
 }
 .active.chartShow{
     display:block;
+}
+/*image*/
+.ui.dimmable.devimage{
+	margin:4px auto;    
 }
 /*footer start*/
 footer {
