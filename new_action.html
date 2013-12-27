@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="renderer" content="webkit">
+    <title>增加新动作——Yeelink</title>
+    <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
+    <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
+</head>
+<body>
+<div class="page">
+<!--header begin-->
+<header>
+	<div class="bigcontainer">
+		<div id="logo">
+			<a href="./">yeelink用户中心</a>
+		</div>
+		<div class="user">
+			<div class="ui inline labeled icon top right pointing dropdown">
+			<img class="ui avatar image" src="resource/images/avatar-default.gif">
+			欢迎，$用户名
+			<i class="dropdown icon"></i>
+				<div class="menu">
+					<a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
+					<a class="item" href="/user/logout"><i class="sign out icon"></i>注销登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- the main menu-->
+<div class="ui teal inverted menu fluid">
+	<div class="bigcontainer">
+		<div class="right menu">
+			<a class="item" href="./index.html"><i class="home icon"></i>管理首页</a>
+			<a class="active item" href="./devices_list.html"><i class="sitemap icon"></i>设备</a>
+			<a class="item" href="user_profile.html"><i class="info icon"></i>账户</a>
+		</div>
+	</div>
+</div>
+<!--the main content begin-->
+	<div class="container">
+	<!--the content-->
+		<div class="ui grid">
+			<!--the vertical menu-->
+			<div class="four wide column">
+				<div class="verticalMenu">
+					<div class="ui vertical pointing menu fluid">
+  						<a class="item" href="./add.html">
+							<i class="add icon"></i> 绑定新设备
+  						</a>
+  						<a class="item" href="./devices_list.html">
+    						<i class="settings icon"></i> 我的设备
+  						</a>
+  						<a class="active teal item" href="./actions.html">
+							<i class="terminal icon"></i> 设备动作
+  						</a>
+					</div>
+				</div>
+			</div>
+			<!--the newDevice form-->
+			<div class="twelve wide column">
+				<div class="pageHeader">
+					<div class="segment">
+						<h3 class="ui dividing header">
+  							<i class="large add icon"></i>
+  							<div class="content">
+    							添加新动作
+  							</div>
+						</h3>
+					</div>
+				</div>
+				<form class="ui form fluid vertical segment">
+                    <div class="two fields">
+                    	<div class="field">
+                            <label>动作名</label>
+                            <div class="ui small left labeled icon input">
+                                <i class="terminal icon"></i>
+                                <input type="text" id="actName" name="actName">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>类型</label>
+                        <div class="ui dropdown selection">
+                            <input type="hidden" name="actType" value="2">
+                            <div class="default text">电子邮件</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu" name="actType" id="actType">
+                                <div class="item" data-value="2" value="2">电子邮件</div>
+                                <div class="item" data-value="3" value="3">网址推送</div>
+                                <div class="item" data-value="4" value="4">微博发布</div>
+                                <div class="item" data-value="6" value="6">移动端推送</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two fields">
+                    	<div class="field email">
+                        	<label>邮箱地址</label>
+                            <div class="ui small left labeled icon input">
+                            	<i class="mail icon"></i>
+                                <input type="email" id="emailAddress" name="emailAddress">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two fields">
+                    	<div class="field url" style="display:none;">
+                            <input type="radio" id="chooseUrl_1" class="chooseUrl" name="chooseUrl" value="1" checked="checked"/>推送到开关
+                            <input type="radio" id="chooseUrl_2" class="chooseUrl" name="chooseUrl" value="2">推送到其它网址
+                            <span class="chooseSwitch ui dropdown selection">
+                                <input type="hidden" name="gender" value="1">
+                                <div class="default text">示例动作01</div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="1" value="1">示例动作01</div>
+                                    <div class="item" data-value="2" value="2">示例动作02</div>
+                                </div>
+                            </span>
+                            <span class="writeUrl ui small left labeled icon input">
+                                <i class="url icon"></i>
+                                <input class="text-input small-input" type="text" id="postUrl_2" name="postUrl_2" placeholder="网址须以'http://'开始">
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="field weibo" style="display:none;">
+                        <label>微博提供商</label>
+                        <span class="ui dropdown selection" name="weiboProvider" id="weiboProvider">
+                            <input type="hidden" name="gender" value="sina">
+                            <div class="default text">新浪微博</div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item" data-value="sina" value="sina">新浪微博</div>
+                                <div class="item" data-value="tencent" value="tencent">腾讯微博</div>
+                            </div>
+                        </span>
+                        <input type="hidden" id="access_token" name="access_token" value="" />
+                        <input type="hidden" id="create_at" name="create_at" value=""/>
+                        <input type="hidden" id="remind_in" name="remind_in" value=""/>
+                        <input type="hidden" id="expires_in" name="expires_in" value=""/>
+                        <input type="hidden" id="uid" name="uid" value=""/>
+                        <input type="hidden" id="openid" name="openid" value=""/>
+                        <input type="hidden" id="openkey" name="openkey" value=""/>
+                        <input type="button" class="ui mini green button" id="weiboGetAuth" name="weiboGetAuth" value="获取授权"/>
+                        <div class="ui pointing left label">
+                          使用微博发布功能, 需要授权"Yeelink微博提醒"访问您的微博帐号.
+                        </div>
+                        <p>授权信息</p>
+							<label>Access Token:</label> <span id="access_token_show"></span><br />
+							<label>有效期至:</label> <span id="expires_time"></span><br />
+                    </div>
+
+                    <div class="field mobile_push" style="display: none">
+                    	移动端推送
+                        <div class="ui pointing left label">
+                          使将消息推送到您的移动终端, 需要接入互联网服务来接收推送. 目前支持iOS和Android系统, 更多详情请参考移动客户端说明.
+                        </div>
+                    </div>
+                    <button class="ui small blue button" type="submit">保存</button>
+                    <button class="ui small basic button" type="reset">取消</button>
+                </form>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!--footer begin-->
+<footer>
+	<div id="copyrights">
+		<div class="inset">
+			<div class="bigcontainer">
+				<div class="fl">
+					<div class="logo"></div>
+					<p>&copy; 2020 青岛亿联客信息技术有限公司, 版权所有<br />
+<a href="http://www.miibeian.gov.cn" target="_blank">鲁ICP备12022271号</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<script type="text/javascript" src="resource/javascript/framework.js"></script>
+<script type="text/javascript" src="resource/javascript/new_action.js"></script>
+</body>
+</html>
