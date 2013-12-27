@@ -388,7 +388,7 @@ $.fn.accordion.settings = {
   exclusive   : true,
   collapsible : true,
 
-  duration    : 500,
+  duration    : 400,
   easing      : 'easeInOutQuint',
 
   onOpen      : function(){},
@@ -5950,10 +5950,10 @@ $.fn.modal.settings = {
 
   closable    : true,
   context     : 'body',
-  duration    : 500,
+  duration    : 400,
   easing      : 'easeOutExpo',
   offset      : 0,
-  transition  : 'scale',
+  transition  : 'fade down',
 
   onShow      : function(){},
   onHide      : function(){},

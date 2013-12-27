@@ -62,8 +62,10 @@
                         <i class="key icon"></i>
                         <input type="text" value="793jIEGJjkjkljfUI3JRTJOIO" readonly="readonly" id="apiKey">
                     </div>
+                    <div class="ui buttons">
                         <a class="ui mini green button" id="copy-apiKey" href="#">复制</a>
-                        <a class="ui mini button" href=./apikey_manage.html>管理</a>
+                        <a class="ui mini blue button" href=./apikey_manage.html>管理</a>
+                    </div>
                     <a id="deviceQuickButton" class="ui red small labeled icon button" href="./devices_list.html">
                         <i class="settings icon"></i>管理所有设备
                     </a>
@@ -79,7 +81,18 @@
 						<h4 class="deviceName">设备名01</h4>
 						<p class="deviceId">设备ID：234</p>
 						<p class="deviceDescription">这里是设备描述。</p>
-						<P>设备状态：</P>
+						<p class="sensorStatus">传感器状态：
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                            <span class="ui red error label" ></span>
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                        </p>
 					</a>
 				</div>
 			</div>
@@ -89,7 +102,11 @@
 						<h4 class="deviceName">设备名02</h4>
 						<p class="deviceId">设备ID：4354</p>
 						<p class="deviceDescription">这里是设备描述。</p>
-						<P>设备状态：</P>
+                        <p class="sensorStatus">传感器状态：
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                        </p>
 					</a>
 				</div>
 			</div>
@@ -99,7 +116,11 @@
 						<h4 class="deviceName">设备名03</h4>
 						<p class="deviceId">设备ID：344</p>
 						<p class="deviceDescription">这里是设备描述。</p>
-						<P>设备状态：<span class="deviceStatusOk"></span></P>
+						<p class="sensorStatus">传感器状态：
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                            <span class="ui green ok label" ></span>
+                        </p>
 					</a>
 				</div>
 			</div>
@@ -141,6 +162,7 @@
 			path:'resource/javascript/ZeroClipboard.swf',
 			copy:function(){return $('input#apiKey').val();}
 		});
+
 		$('.ui.dropdown')
 			.dropdown();
 	});

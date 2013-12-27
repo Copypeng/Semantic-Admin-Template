@@ -3107,7 +3107,7 @@ body > .ui.grid {
 
 .ui.message .header {
   margin: 0em;
-  font-size: 1.33em;
+  font-size: 1.33rem;
   font-weight: bold;
 }
 
@@ -3337,7 +3337,7 @@ body > .ui.grid {
 }
 
 .ui.message {
-  font-size: 1em;
+  font-size: 0.875rem;
 }
 
 .ui.large.message {
@@ -9710,7 +9710,7 @@ a.ui.label:hover:before {
 }
 
 .ui.corner.label .text {
-  display: inline-block;
+/*  display: inline-block;*/
   font-weight: bold;
   margin: 0.5em 0em 0em 0.6em;
   width: 2.5em;
@@ -9742,7 +9742,7 @@ a.ui.label:hover:before {
 }
 
 .ui.left.corner.label .text {
-  margin: 0.5em 0em 0em -0.6em;
+  margin: 6px 0 0 -2px;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -11740,7 +11740,7 @@ a.ui.teal.label:hover:before {
 .ui.accordion .content {
   display: none;
   margin: 0em;
-  padding: 1.3em 1em;
+  padding: 8px 16px;
 }
 
 /* Arrow */

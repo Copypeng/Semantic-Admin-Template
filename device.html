@@ -6,6 +6,7 @@
     <meta name="renderer" content="webkit">
     <title>设备管理——Yeelink</title>
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/switch.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
 </head>
 <body>
@@ -93,8 +94,8 @@
                     </div>
   					<div class="five wide center aligned column">
                         <div class="ui buttons">
-                            <a class="ui red button" href="./new_sensor.html">添加传感器</a>
-                            <a class="ui blue button" href="./edit_device.html">编辑</a>
+                            <a class="ui small red labeled icon button" href="./new_sensor.html"><i class="add icon"></i>添加传感器</a>
+                            <a class="ui small blue button" href="./edit_device.html">编辑</a>
                         </div>
   					</div>
 				</div>
@@ -103,19 +104,7 @@
                 </div>
                 <!--the sensor info-->
                 <div class="ui middle aligned device grid segment">
-                    <!--<div class="ui basic attached accordion showChart">
-                        <a class="title">
-                               <i class="chart basic icon"></i>图表
-                        </a>
-                        <div class="content" style="text-align: center;">
-                            	<i class="massive chart basic icon"></i>
-                            	这里是图表！
-                        </div>
-                    </div>-->
                     <div class="eleven wide column">
-                        <div class="ui left corner label" data-variation="inverted">
-                            <div class="text">正常</div>
-                        </div>
                         <div class="ui info segment">
                                 <h5 class="ui header near">
                                     <img src="resource/images/icon_data.png">
@@ -127,7 +116,7 @@
 				        </div>
                     </div>
                     <div class="five wide center aligned column">
-                        <div class="ui top right attached label show">
+                        <div class="ui top right attached label show chart">
                             <a><i class="chart basic icon"></i>图表</a>
                         </div>
                         <div class="ui data segment">
@@ -190,10 +179,8 @@
                     </div>
                     <div class="five wide center aligned column">
                         <div class="ui data segment">
-                            <div class="ui huge toggle checkbox">
-                                <input type="checkbox"  id="unique-id">
-                                <label for="unique-id"></label>
-                            </div>
+                             	<input type="checkbox" id="s4" checked>
+  								<label class="slider-v2" for="s4"></label>
                            </div>
                     </div>
                    <div class="ui basic attached accordion action">
@@ -219,7 +206,7 @@
 				        </div>
                     </div>
                     <div class="five wide center aligned column">
-                       <!-- <div class="ui top right attached label show"><a><i class="chart basic icon"></i>图表</a></div>-->
+                       <div class="ui top right attached label show"><i class="map icon"></i>地图</div>
                         <div class="ui data segment">
                           <p class="gps" title="详细值：36.3332526, 117.3332526">36.33, 117.21</p>
                           <p class="unit">经纬度</p>
@@ -269,7 +256,7 @@
 				        </div>
                     </div>
                     <div class="five wide center aligned column">
-                       <!-- <div class="ui top right attached label show"><a><i class="chart basic icon"></i>图表</a></div>-->
+                       <div class="ui top right attached label show"><i class="photos basic icon"></i>全部图片</div>
                         <div class="ui data segment">
                           <img src="resource/images/avatar-default.gif" height="60px" />
                         </div>
@@ -283,13 +270,10 @@
                 <!--another sensor-->
                <div class="ui middle aligned device grid segment">
                     <div class="eleven wide column">
-                        <div class="ui left corner label" data-variation="inverted">
-                            <div class="text">正常</div>
-                        </div>
                         <div class="ui info segment">
                                 <h5 class="ui header near">
                                     <img src="resource/images/icon_pic.png">
-                                    传感器04 <span class="ui type label">泛传感器型</span>
+                                    传感器05 <span class="ui type label">泛传感器型</span>
                                 </h5>
 								<p>标示ID： <span class="stress">2343</span></p>
                                 <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
@@ -332,13 +316,10 @@
                 <!--another sensor-->
                <div class="ui middle aligned device grid segment">
                     <div class="eleven wide column">
-                        <div class="ui left corner label" data-variation="inverted">
-                            <div class="text">正常</div>
-                        </div>
                         <div class="ui info segment">
                                 <h5 class="ui header near">
                                     <img src="resource/images/icon_bird.png">
-                                    传感器04 <span class="ui type label">微博抓取型</span>
+                                    传感器05 <span class="ui type label">微博抓取型</span>
                                 </h5>
 								<p>标示ID： <span class="stress">2343</span></p>
                                 <p>地址： <a class="externalUrl" href="http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints" target="_blank">http://api.yeelink.net/v1.0/device/5675/sensor/10385/datapoints</a></p>
@@ -348,7 +329,8 @@
                     <div class="five wide center aligned column">
                        <!-- <div class="ui top right attached label show"><a><i class="chart basic icon"></i>图表</a></div>-->
                         <div class="ui data segment">
-
+							<p class="data">3</p>
+                            <p class="unit">条未读</p>
                         </div>
                     </div>
                    <div class="ui basic attached accordion action">
@@ -405,6 +387,65 @@
         </div>
     </div>
 </div>
+
+<!--addNewDIYAction model-->
+	<div class="ui small test addNewDIYAction modal">
+		<i class="close icon"></i>
+		<div class="header">
+			一个新的促发动作
+		</div>
+		<div class="content">
+                <div class="ui form vertical segment">
+				    <form name="form" method="post">
+                        <div class="inline field">
+                        	<label>当数据满足:</label>
+                            <div class="ui dropdown selection">
+                                <input type="hidden" name="gender" value="1">
+                                <div class="default text"> 大于 </div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="大于" value="1"> 大于 </div>
+                                    <div class="item" data-value="大于或等于 " value="2"> 大于或等于 </div>
+                                    <div class="item" data-value="小于" value="3"> 小于 </div>
+                                    <div class="item" data-value="小于或等于" value="4"> 小于或等于 </div>
+                                    <div class="item" data-value="等于" value="5"> 等于 </div>
+                                </div>
+                            </div>
+                            <input type="text" >
+                        </div>
+                        <div class="inline field">
+                        	<label>指定动作：</label>
+                            <div class="ui dropdown selection">
+                                <input type="hidden" name="gender" value="1">
+                                <div class="default text"> 示例动作01 </div>
+                                <i class="dropdown icon"></i>
+                                <div class="menu">
+                                    <div class="item" data-value="示例动作01" value="1"> 示例动作01 </div>
+                                    <div class="item" data-value="示例动作02" value="2"> 示例动作02 </div>
+                                    <div class="item" data-value="示例动作01" value="3"> 示例动作03 </div>
+                                </div>
+                            </div>
+                            <div class="ui pointing left label">
+                             	可在 设备动作 中添加新动作.
+                            </div>
+                        </div>
+                        <div class="inline field">
+                        	<label>消息内容:</label>
+                            <textarea placeholder="不超过120个字……"></textarea>
+                        </div>
+				    </form>
+                </div>
+		</div>
+        <div class="actions">
+            <div class="ui black button">
+                   取消
+            </div>
+            <div class="ui positive right labeled icon button">
+                确定
+              <i class="checkmark icon"></i>
+            </div>
+        </div>
+	</div>
 <!--footer begin-->
 <footer>
 	<div id="copyrights">
@@ -427,25 +468,17 @@
 			.dropdown()
         ;
 
-        $('.ok.label')
-        .popup({
-            content:'这个传感器正常工作。'
-        })
-        ;
-
-        $('.error.label')
-        .popup({
-            content:'哎呀，这个传感器异常。'
-        })
-        ;
         $('.ui.accordion')
         .accordion()
         ;
 
-        $('.show').click(function(){
-            $('.show').toggleClass('active');
+        $('.show a').click(function(){
+            $('.show.chart').toggleClass('active');
             $('.chartShow').toggleClass('active');
         });
+
+        $('.test.addNewDIYAction.modal')
+		.modal('attach events','.addaction.button','show');
 	});
 </script>
 </body>

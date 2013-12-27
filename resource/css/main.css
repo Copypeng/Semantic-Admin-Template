@@ -5,7 +5,7 @@ html{
 body {
     font: 14px 'Helvetica Neue','Microsoft YaHei','Hiragino Sans GB','WenQuanYi Micro Hei',Helvetica,Arial,Sans-serif;
     line-height: 1.428571429;
-    color: #333;
+    color: #444;
     margin:0px;
     padding:0px;
 	height:100%;
@@ -272,7 +272,7 @@ h5.ui.header.near img{
 }
 .ui.basic.attached.accordion.action .content{
     margin-top:8px;
-    border-top:1px solid rgba(204, 204, 204, 0.3);
+/*    border-top:1px solid rgba(204, 204, 204, 0.3);*/
 }
 /*chart*/
 .chartShow{
