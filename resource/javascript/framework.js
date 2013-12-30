@@ -4426,8 +4426,8 @@ $.fn.dimmer.settings = {
   closable    : true,
 
   duration    : {
-    show : 500,
-    hide : 500
+    show : 50,
+    hide : 1
   },
 
   onChange    : function(){},

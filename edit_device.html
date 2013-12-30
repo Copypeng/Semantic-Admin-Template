@@ -75,17 +75,6 @@
 				<div class="ui form fluid vertical segment">
 					<form name="form" action="/user/new_device" method="post">
 						<div class="two fields">
-                            <div class="field">
-                                <label>设备来源</label>
-                                <div class="ui small left labeled icon input">
-									<input type="text" id="username" name="username" value="自备设备" disabled="disabled">
-									<i class="user icon"></i>
-									<div class="ui corner label">
-									</div>
-								</div>
-                            </div>
-						</div>
-						<div class="two fields">
 							<div class="field">
 								<label>设备名</label>
 								<div class="ui small left labeled icon input">
@@ -178,7 +167,7 @@
                                     <div class="ui dimmer hidden">
                                         <div class="content">
                                             <div class="center">
-                                              <a class="ui tiny button">编辑</a>
+                                              <a class="ui mini button">编辑</a>
                                               <a class="ui mini red button">删除</a>
                                             </div>
                                         </div>
@@ -198,11 +187,11 @@
                          </div>
 						<div class="field">
                         	<div class="ui radio checkbox">
-                                <input type="radio" name="pub" checked>
+                                <input type="radio" name="pub" readonly checked>
                                 <label>公开</label>
                           	</div>
                             <div class="ui radio checkbox">
-                            	<input type="radio" name="pri" disabled="disabled">
+                            	<input type="radio" name="pri" readonly>
                             	<label>不公开</label>
                          	</div>
                             <div class="ui pointing left label">
