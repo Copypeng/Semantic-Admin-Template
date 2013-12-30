@@ -54,6 +54,13 @@
 				</h3>
 			</div>
 		</div>
+        <div class="ui warning message">
+            	<i class="close icon" data-dismiss="alert"></i>
+            <div class="header">
+            	<i class="warning icon"></i> 当前帐户还未激活.
+            </div>
+            未激活账户无法使用Yeelink服务，请检查注册时填写的邮箱，完成验证.
+        </div>
        <div class="ui small message" id="showApiKey">
            <div class="ui form segment">
                 <div class="inline field">
@@ -62,14 +69,12 @@
                         <i class="key icon"></i>
                         <input type="text" value="793jIEGJjkjkljfUI3JRTJOIO" readonly="readonly" id="apiKey">
                     </div>
-                    <div class="ui buttons">
-                        <a class="ui mini green button" id="copy-apiKey" href="#">复制</a>
-                        <a class="ui mini blue button" href=./apikey_manage.html>管理</a>
-                    </div>
+                    <a class="ui mini green button" id="copy-apiKey" href="#">复制</a>
+                    <a class="ui mini blue button" href=./apikey_manage.html>管理</a>
                     <a id="deviceQuickButton" class="ui red small labeled icon button" href="./devices_list.html">
                         <i class="settings icon"></i>管理所有设备
                     </a>
-                 </div>
+                </div>
           </div>
       </div>
 	<!--device list-->
@@ -155,7 +160,9 @@
 
 <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="resource/javascript/framework.js"></script>
+<script type="text/javascript" src="resource/javascript/abetterbrowser.js"></script>
 <script type="text/javascript" src="resource/javascript/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="resource/javascript/alert.js"></script>
 <script>
 	$(document).ready(function(){
 		$('a#copy-apiKey').zclip({

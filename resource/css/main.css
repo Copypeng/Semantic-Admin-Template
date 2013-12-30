@@ -67,6 +67,10 @@ select {
 .form-control::-webkit-input-placeholder {
   color: #999999;
 }
+/*segment*/
+.ui.segment .right{
+    float:right;
+}
 /*header*/
 header{
 	position:relative;
