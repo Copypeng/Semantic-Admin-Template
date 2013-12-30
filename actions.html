@@ -73,7 +73,7 @@
 					</div>
 				</div>
 				<div class="ui form vertical segment">
-					<div class="ui red small labeled icon add button"><i class="add icon"></i>增加新动作</div>
+					<a class="ui red small labeled icon add button" href="./new_action.html"><i class="add icon"></i>增加新动作</a>
 				</div>
 				<div class="ui form fluid vertical segment">
 					<form name="form" action="/user/actions" method="post">
@@ -91,25 +91,25 @@
       									<td>示例动作01</td>
       									<td>电子邮件</td>
 										<td>否</td>
-										<td><a class="ui tiny blue edit button"><i class="edit icon"></i>编辑</a> <a class="ui tiny basic button"><i class="trash icon"></i>删除</a></td>
+										<td><a class="ui tiny blue edit button" href="./edit_action.html"><i class="edit icon"></i>编辑</a> <a class="ui tiny basic button"><i class="trash icon"></i>删除</a></td>
     								</tr>
 									<tr class="positive">
       									<td>示例动作01</td>
       									<td>电子邮件</td>
 										<td><i class="icon checkmark"></i>是</td>
-										<td><a class="ui tiny blue edit button"><i class="edit icon"></i>编辑</a> <a class="ui tiny basic button"><i class="trash icon"></i>删除</a></td>
+										<td><a class="ui tiny blue edit button" href="./edit_action.html"><i class="edit icon"></i>编辑</a> <a class="ui tiny basic button"><i class="trash icon"></i>删除</a></td>
     								</tr>
 									<tr>
       									<td>示例动作01</td>
       									<td>电子邮件</td>
 										<td>否</td>
-										<td><a class="ui tiny blue edit button"><i class="edit icon"></i>编辑</a> <a class="ui tiny basic button"><i class="trash icon"></i>删除</a></td>
+										<td><a class="ui tiny blue edit button" href="./edit_action.html"><i class="edit icon"></i>编辑</a> <a class="ui tiny basic button"><i class="trash icon"></i>删除</a></td>
     								</tr>
 									<tr>
       									<td>示例动作01</td>
       									<td>电子邮件</td>
 										<td>否</td>
-										<td><a class="ui tiny blue edit button"><i class="edit icon"></i>编辑</a> <a class="ui tiny basic button"><i class="trash icon"></i>删除</a></td>
+										<td><a class="ui tiny blue edit button" href="./edit_action.html"><i class="edit icon"></i>编辑</a> <a class="ui tiny basic button"><i class="trash icon"></i>删除</a></td>
     								</tr>
   								</tbody>
 							</table>
@@ -119,97 +119,6 @@
 			</div>
 		</div>
 	</div>
-	<!--add action model-->
-	<div class="ui small test add modal">
-		<i class="close icon"></i>
-		<div class="header">
-			增加新动作
-		</div>
-		<div class="content">
-            <form class="ui form vertical segment" action="/user/new_action" name="form" method="post">
-                <div class="field">
-                    <label>动作名</label>
-                    <div class="ui small left labeled icon input">
-                        <input type="text" id="actName" name="actName">
-                        <i class="terminal icon"></i>
-                    </div>
-                </div>
-                <div class="field">
-                    <label>类型</label>
-                    <div class="ui dropdown selection">
-                        <input type="hidden" name="gender" value="1">
-                        <div class="default text">电子邮件</div>
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <div class="item" data-value="短信" value="1">短信</div>
-                            <div class="item" data-value="电子邮件" value="2">电子邮件</div>
-                            <div class="item" data-value="网址推送" value="3">网址推送</div>
-                            <div class="item" data-value="微博推送" value="4">微博发布</div>
-                            <div class="item" data-value="即时通讯-QQ" value="5">即时通讯-QQ</div>
-                            <div class="item" data-value="移动端推送" value="6">移动端推送</div>
-                            <div class="item" data-value="微信推送" value="7">微信推送</div>
-                        </div>
-                    </div>
-                </div>
-            </form>
-		</div>
-        <div class="actions">
-            <div class="ui small black button">
-                   取消
-            </div>
-            <div class="ui small positive right labeled icon button">
-                确定
-                  <i class="checkmark icon"></i>
-            </div>
-        </div>
-	</div>
-    <!--edit action model-->
-	<div class="ui small test edit modal">
-		<i class="close icon"></i>
-		<div class="header">
-			编辑这个动作
-		</div>
-		<div class="content">
-                <div class="ui form vertical segment">
-				    <form action="/user/new_action" name="form" method="post">
-						<div class="field">
-							<label>动作名</label>
-							<div class="ui left labeled icon input">
-								<input type="text" id="actName" name="actName">
-								<i class="terminal icon"></i>
-							</div>
-						</div>
-						<div class="field">
-							<label>类型</label>
-							<div class="ui dropdown selection">
-      							<input type="hidden" name="gender" value="1">
-      							<div class="default text">电子邮件</div>
-								<i class="dropdown icon"></i>
-								<div class="menu">
-									<div class="item" data-value="短信" value="1">短信</div>
-									<div class="item" data-value="电子邮件" value="2">电子邮件</div>
-									<div class="item" data-value="网址推送" value="3">网址推送</div>
-									<div class="item" data-value="微博推送" value="4">微博发布</div>
-									<div class="item" data-value="即时通讯-QQ" value="5">即时通讯-QQ</div>
-									<div class="item" data-value="移动端推送" value="6">移动端推送</div>
-									<div class="item" data-value="微信推送" value="7">微信推送</div>
-								</div>
-							</div>
-						</div>
-				    </form>
-                </div>
-		</div>
-        <div class="actions">
-            <div class="ui small black button">
-                   取消
-            </div>
-            <div class="ui small positive right labeled icon button">
-                确定
-                  <i class="checkmark icon"></i>
-            </div>
-        </div>
-	</div>
-
 </div>
 <!--footer begin-->
 <footer>
@@ -231,11 +140,6 @@
 <script>
 	$('.ui.dropdown')
 			.dropdown();
-
-	$('.test.add.modal')
-		.modal('attach events','.add.button','show');
-    $('.test.edit.modal')
-		.modal('attach events','.edit.button','show');
 </script>
 </body>
 </html>

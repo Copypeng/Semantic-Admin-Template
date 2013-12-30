@@ -31,7 +31,43 @@ a {
 .ui.radio.checkbox{
     margin:16px 16px 8px 0 !important;
 }
-/*header start*/
+/*select*/
+select {
+  text-transform: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.form-control {
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  vertical-align: middle;
+  color: rgba(0,0,0,.8);
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  cursor:pointer;
+}
+.form-control:focus {
+  outline: 0;
+}
+.form-control:-moz-placeholder {
+  color: #999999;
+}
+.form-control::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999999;
+}
+.form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+/*header*/
 header{
 	position:relative;
 	height:72px;
