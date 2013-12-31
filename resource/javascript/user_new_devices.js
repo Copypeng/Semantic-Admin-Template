@@ -11,8 +11,7 @@ $(document).ready(function() {
     $('.field .ui.image')
       .dimmer({
         on: 'hover'
-        })
-        ;
+        });
 
 	Gmap();
 	function Gmap() {

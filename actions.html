@@ -34,8 +34,8 @@
 	<div class="bigcontainer">
 		<div class="right menu">
 			<a class="item" href="./index.html"><i class="home icon"></i>管理首页</a>
-			<a class="active item"><i class="sitemap icon"></i>设备</a>
-			<a class="item" href="user_profile.html"><i class="info icon"></i>账户</a>
+			<a class="active item" href="./devices_list.html"><i class="sitemap icon"></i>设备</a>
+			<a class="item" href="./user_profile.html"><i class="info icon"></i>账户</a>
 		</div>
 	</div>
 </div>
@@ -47,13 +47,13 @@
 			<div class="four wide column">
 				<div class="verticalMenu">
 					<div class="ui vertical pointing menu fluid">
-  						<a class="item">
+  						<a class="item" href="./add.html">
 							<i class="add icon"></i> 绑定新设备
   						</a>
-  						<a class="item">
+  						<a class="item" href="./devices_list.html">
     						<i class="settings icon"></i> 我的设备
   						</a>
-  						<a class="active teal item">
+  						<a class="active teal item" href="./actions.html">
 							<i class="terminal icon"></i> 设备动作
   						</a>
 					</div>
@@ -72,8 +72,12 @@
 						</h3>
 					</div>
 				</div>
-				<div class="ui form vertical segment">
+				<div class="ui vertical segment">
 					<a class="ui red small labeled icon add button" href="./new_action.html"><i class="add icon"></i>增加新动作</a>
+                    <div class="ui small icon input right">
+                          <input type="text" placeholder="输入动作名搜索……">
+                          <i class="search icon"></i>
+                    </div>
 				</div>
 				<div class="ui form fluid vertical segment">
 					<form name="form" action="/user/actions" method="post">

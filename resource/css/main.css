@@ -71,6 +71,11 @@ select {
 .ui.segment .right{
     float:right;
 }
+.ui.segment .absolute{
+    position:absolute;
+    right:0;
+    top:7px;
+}
 /*header*/
 header{
 	position:relative;
@@ -153,6 +158,9 @@ header .user{
     font-size:0.875rem;
 }
 /*the device list*/
+.ui.device.segment{
+    clear: both !important;
+}
 .ui.device.segment p{
     color:#666;
     font-size:14px;
