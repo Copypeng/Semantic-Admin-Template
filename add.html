@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
     <title>绑定新设备——Yeelink</title>
+    <link type="text/css" rel="stylesheet" href="resource/css/jquery.tagsinput.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
 </head>
@@ -84,20 +85,7 @@
 							</div>
 							<div class="diy field">
 								<label>标签（tags）</label>
-								<div class="ui small left labelen icon input">
-									<input type="text" placeholder="各关键词间用逗号(,)分隔" id="device_tags" name="device_tags"/>
-									<i class="tags icon"></i>
-								</div>
-							</div>
-						</div>
-						<div class="two fields yeelink" style="display:none;">
-							<div class="field">
-								<label>设备ID码</label>
-								<input type="text" placeholder="见设备标签"  id="product_uuid" name="product_uuid" value="<?php echo $uuid; ?>" />
-							</div>
-							<div class="field">
-								<label>设备秘钥</label>
-								<input type="text" placeholder="请从随机卡片上找到" id="product_key" name="product_key" value="<?php echo $product_key; ?>" />
+									<input type="text" id="tags" name="tags" name="device_tags" style="display:none">
 							</div>
 						</div>
 						<div class="field">
@@ -166,8 +154,8 @@
       							对于个人普通用户, 默认接入是公开的.
     						</div>
                         </div>
-						<input class="ui small blue submit button" type="submit" value="保存">
-						<input class="ui small basic button" type="reset" value="取消">
+                    <input class="ui small blue submit button" type="submit" value="保存">
+                    <input class="ui small basic button" type="reset" value="取消">
 					</form>
 					<!--the form end-->
 				</div>
@@ -194,5 +182,9 @@
 <script type="text/javascript" src="resource/javascript/framework.js"></script>
 <script type="text/javascript" src="resource/javascript/user_new_devices.js"></script>
 <script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyC7a2MMoG2nkxwY6bmxjoULoiz2YTp43iI&sensor=false&language=cn"></script>
+<script type="text/javascript" src="resource/javascript/jquery.tagsinput.js"></script>
+<script>
+	$('#tags').tagsInput();
+</script>
 </body>
 </html>
