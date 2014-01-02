@@ -1,3 +1,19 @@
+/*
+
+	jQuery Tags Input Plugin 1.3.3
+
+	Copyright (c) 2011 XOXCO, Inc
+
+	Documentation for this plugin lives here:
+	http://xoxco.com/clickable/jquery-tags-input
+
+	Licensed under the MIT license:
+	http://www.opensource.org/licenses/mit-license.php
+
+	ben@xoxco.com
+
+*/
+
 (function($) {
 
 	var delimiter = new Array();
@@ -161,14 +177,16 @@
 	$.fn.tagsInput = function(options) {
     var settings = jQuery.extend({
       interactive:true,
-      defaultText:'输入并按回车',
+      defaultText:'输入并按下回车……',
       minChars:0,
+      width:'100%',
+      height:'100px',
       autocomplete: {selectFirst: false },
       'hide':true,
       'delimiter':',',
       'unique':true,
       removeWithBackspace:true,
-      placeholderColor:'rgba(102, 102, 102, 0.69)',
+      placeholderColor:'#aaaaaa',
       autosize: true,
       comfortZone: 20,
       inputPadding: 6*2
