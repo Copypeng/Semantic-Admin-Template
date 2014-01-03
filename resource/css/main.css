@@ -31,6 +31,12 @@ a {
 .ui.radio.checkbox{
     margin:16px 16px 8px 0 !important;
 }
+.ui.warning.message a{
+    color:#96904D;
+}
+.ui.warning.message a:hover, .ui.warning.message a:focus {
+    text-decoration:underline;
+}
 /*select*/
 select {
   text-transform: none;

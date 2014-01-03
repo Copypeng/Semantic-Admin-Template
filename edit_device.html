@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>编辑设备 | Yeelink用户中心</title>
+    <link type="text/css" rel="stylesheet" href="resource/css/jquery.tagsinput.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
 </head>
@@ -82,28 +83,18 @@
 									<i class="sitemap icon"></i>
 								</div>
 							</div>
-							<div class="diy field">
+                            <div class="field"></div>
+						</div>
+						<div class="two fields">
+                            <div class="field">
+                                <label>描述</label>
+                                <textarea placeholder="不超过30个字符……"></textarea>
+                            </div>
+                            <div class="diy field">
 								<label>标签（tags）</label>
-								<div class="ui small left labelen icon input">
-									<input type="text" placeholder="各关键词间用逗号(,)分隔" id="device_tags" name="device_tags"/>
-									<i class="tags icon"></i>
-								</div>
-							</div>
-						</div>
-						<div class="two fields yeelink" style="display:none;">
-							<div class="field">
-								<label>设备ID码</label>
-								<input type="text" placeholder="见设备标签"  id="product_uuid" name="product_uuid" value="<?php echo $uuid; ?>" />
-							</div>
-							<div class="field">
-								<label>设备秘钥</label>
-								<input type="text" placeholder="请从随机卡片上找到" id="product_key" name="product_key" value="<?php echo $product_key; ?>" />
-							</div>
-						</div>
-						<div class="field">
-							<label>描述</label>
-							<textarea placeholder="不超过30个字符……"></textarea>
-						</div>
+									<input type="text" id="device_tags" name="device_tags"/>
+                            </div>
+                        </div>
 						<div class="diy field">
 							<label>地理位置名称</label>
 							<div class="ui dropdown selection">
@@ -226,5 +217,9 @@
 <script type="text/javascript" src="resource/javascript/framework.js"></script>
 <script type="text/javascript" src="resource/javascript/user_new_devices.js"></script>
 <script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyC7a2MMoG2nkxwY6bmxjoULoiz2YTp43iI&sensor=false&language=cn"></script>
+<script type="text/javascript" src="resource/javascript/jquery.tagsinput.js"></script>
+<script>
+    $('#device_tags').tagsInput();
+</script>
 </body>
 </html>

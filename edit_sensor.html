@@ -2,9 +2,10 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
     <title>编辑传感器 | Yeelink用户中心</title>
+    <link type="text/css" rel="stylesheet" href="resource/css/jquery.tagsinput.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
 </head>
@@ -78,7 +79,7 @@
 								<label>传感器名</label>
 								<div class="ui small left labeled icon input">
 									<input type="text" placeholder="给您的传感器起个容易记住的名字……" id="device_title" name="device_title" value=""/>
-									<i class="sitemap icon"></i>
+									<i class="exchange icon"></i>
 								</div>
 							</div>
 						</div>
@@ -99,14 +100,9 @@
     						</div>
 						</div>
                         <div class="two fields">
-                        	<div class="field">
-                            	<div class="field">
-                                    <label>标签（tags）</label>
-                                    <div class="ui small left labelen icon input">
-                                        <input type="text" placeholder="各关键词间用逗号(,)分隔" id="device_tags" name="device_tags"/>
-                                        <i class="tags icon"></i>
-                                    </div>
-                                </div>
+                            <div class="field">
+                                <label>标签（tags）</label>
+                                <input type="text" id="sensor_tags" name="sensor_tags">
                             </div>
                         </div>
 						<div class="field">
@@ -139,7 +135,11 @@
 
 <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="resource/javascript/framework.js"></script>
-<script type="text/javascript" src="resource/javascript/user_new_devices.js"></script>
-<script type="text/javascript" src="http://ditu.google.cn/maps/api/js?key=AIzaSyC7a2MMoG2nkxwY6bmxjoULoiz2YTp43iI&sensor=false&language=cn"></script>
+<script type="text/javascript" src="resource/javascript/jquery.tagsinput.js"></script>
+<script>
+    $('.ui.dropdown')
+		.dropdown();
+    $('#sensor_tags').tagsInput();
+</script>
 </body>
 </html>
