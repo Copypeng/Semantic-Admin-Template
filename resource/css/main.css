@@ -77,11 +77,6 @@ select {
 .ui.segment .right{
     float:right;
 }
-.ui.segment .absolute{
-    position:absolute;
-    right:0;
-    top:7px;
-}
 /*header*/
 header{
 	position:relative;
