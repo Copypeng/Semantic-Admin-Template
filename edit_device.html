@@ -141,14 +141,14 @@
                         <div class="field">
                         	<a class="ui green small button"><i class="photos basic icon"></i>上传图片</a>
                         </div>
-						<div class="field">
-                               <div class="ui medium image dimmable devimage">
+						<div class="field devimage">
+                            <div class="dev_img_inner">
+                               <div class="ui medium image dimmable">
                                     <img src="resource/images/photo.jpg">
                                     <div class="ui dimmer hidden">
                                         <div class="content">
                                             <div class="center">
-                                              <a class="ui mini button">编辑</a>
-                                              <a class="ui mini red button">删除</a>
+                                              <a href="#">删除</a>
                                             </div>
                                         </div>
                                    	</div>
@@ -158,8 +158,7 @@
                                     <div class="ui dimmer hidden">
                                         <div class="content">
                                             <div class="center">
-                                              <a class="ui mini button">编辑</a>
-                                              <a class="ui mini red button">删除</a>
+                                              <a href="#">删除</a>
                                             </div>
                                         </div>
                                    	</div>
@@ -169,12 +168,22 @@
                                     <div class="ui dimmer hidden">
                                         <div class="content">
                                             <div class="center">
-                                              <a class="ui mini button">编辑</a>
-                                              <a class="ui mini red button">删除</a>
+                                              <a href="#">删除</a>
                                             </div>
                                         </div>
                                    	</div>
                                 </div>
+                                <div class="ui medium image dimmable">
+                                    <img  class="uimedium image" src="resource/images/devicedomo01.jpg">
+                                    <div class="ui dimmer hidden">
+                                        <div class="content">
+                                            <div class="center">
+                                              <a href="#">删除</a>
+                                            </div>
+                                        </div>
+                                   	</div>
+                                </div>
+                            </div>
                          </div>
 						<div class="field">
                         	<div class="ui radio checkbox">
@@ -182,7 +191,7 @@
                                 <label>公开</label>
                           	</div>
                             <div class="ui radio checkbox">
-                            	<input type="radio" name="pri" readonly>
+                            	<input type="radio" name="pri" disabled="disabled">
                             	<label>不公开</label>
                          	</div>
                             <div class="ui pointing left label">

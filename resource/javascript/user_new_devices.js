@@ -9,8 +9,10 @@ $(document).ready(function() {
   	.dropdown();
     
     $('.field .ui.image')
-      .dimmer({
-        on: 'hover'
+        .dimmer({on: 'hover'})
+		.dimmer('setting','duration',{
+            show: 30,
+            hide: 1
         });
 
 	Gmap();

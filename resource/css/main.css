@@ -337,9 +337,15 @@ h5.ui.header.sprite-icon.switchicon{ background-position: 0 -336px;}
 .active.chartShow{
     display:block;
 }
-/*image*/
-.ui.dimmable.devimage{
-	margin:4px auto;    
+/*image box*/
+.field.devimage{
+	overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+}
+.dev_img_inner {
+    width:7777px;
+    overflow: hidden;
 }
 /*footer start*/
 footer {
