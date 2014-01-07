@@ -263,14 +263,16 @@ header .user{
     padding-bottom:0.5rem;
 }
 /* ui header*/
-h5.ui.header.near{
-    margin-bottom:8px;
-    margin-bottom:0.5rem;
+h5.ui.header.sprite-icon {
+    padding-left:22px;
+    background:url(../images/icon-sprite.png) no-repeat top left;
 }
-h5.ui.header.near img{
-    height:18px;
-    vertical-align:top;
-}
+h5.ui.header.sprite-icon.data{ background-position: 0 -68px;}
+h5.ui.header.sprite-icon.bird{ background-position: 0 0;}
+h5.ui.header.sprite-icon.gps{ background-position: 0 -136px;}
+h5.ui.header.sprite-icon.key{ background-position: 0 -204px; }
+h5.ui.header.sprite-icon.pic{ background-position: 0 -268px;}
+h5.ui.header.sprite-icon.switchicon{ background-position: 0 -336px;}
 /*label*/
 .ui.attached.label.show{
     z-index:99;
