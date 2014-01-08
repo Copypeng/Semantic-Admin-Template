@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <title>部署产品 | Yeelink用户中心</title>
+    <title>编辑产品 | Yeelink用户中心</title>
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
 </head>
@@ -48,10 +48,10 @@
 			<div class="four wide column">
 				<div class="verticalMenu">
 					<div class="ui vertical pointing menu fluid">
-  						<a class="active teal item" href="./deploy.html">
+  						<a class="item" href="./deploy.html">
 							<i class="rocket icon"></i> 部署新产品
   						</a>
-  						<a class="item" href="./product_list.html">
+  						<a class="active teal item" href="./product_list.html">
     						<i class="cloud icon"></i> 我的产品
   						</a>
   						<a class="item" href="">
@@ -65,16 +65,16 @@
 				<div class="pageHeader">
 					<div class="segment">
 						<h3 class="ui dividing header">
-  							<i class="large rocket icon"></i>
+  							<i class="large edit sign icon"></i>
   							<div class="content">
-    							部署新产品
-    							<div class="sub header">你的设备模板即将成为真正的产品</div>
+    							编辑产品
+    							<div class="sub header">修改这个产品的相关信息</div>
   							</div>
 						</h3>
 					</div>
 				</div>
 				<div class="ui form fluid vertical segment">
-					<form name="form" action="/user/deploy" method="post">
+					<form name="form" action="/user/edit_product" method="post">
 						<div class="two fields">
                         	<div class="field">
                             	<label>产品名称</label>
@@ -85,35 +85,9 @@
                             </div>
                             <div class="field">
                             	<label>产品模板</label>
-                                <div class="ui selection dropdown">
-                                      <input type="hidden" name="template" value="温度自动报警器">
-                                      <div class="text">温室自动报警器</div>
-                                      <i class="dropdown icon"></i>
-                                      <div class="menu">
-                                            <div class="item" data-value="温室自动报警器">温室自动报警器</div>
-                                        	<div class="item" data-value="设备01">设备01</div>
-                                        	<div class="item" data-value="设备02">设备02</div>
-                                        	<div class="item" data-value="设备03">设备03</div>
-                                      </div>
-                                </div>
-                                <a class="ui mini red button" href="./add.html" title="产品总是依赖设备充当模板">创建新设备</a>
-                            </div>
-                        </div>
-                        <div class="two fields">
-                            <div class="field">
-                            	<label>批次 <small>（自动生成）</small></label>
                                 <div class="ui small left icon input">
-                                    <input type="text" value="L20131205-ylb-001" readonly>
-                                    <i class="ordered list icon"></i>
-                                    <div class="ui corner label">
-									</div>
-                                </div>
-                            </div>
-                        	<div class="field">
-                            	<label>本批次数目</label>
-                                <div class="ui small left icon input">
-                                	<input type="number" placeholder="比如，50">
-                                    <i class="truck icon"></i>
+                                    <input type="text" readonly value="温室自动报警器">
+                                    <i class="book icon"></i>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +130,7 @@
                             <textarea placeholder="不超过150个字符……"></textarea>
                         </div>
 
-                    <input class="ui small blue submit button" type="submit" value="立即部署">
+                    <input class="ui small blue submit button" type="submit" value="保存">
                     <input class="ui small basic button" type="reset" value="取消">
 					</form>
 					<!--the form end-->
@@ -183,9 +157,6 @@
 <script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
 <script type="text/javascript" src="resource/javascript/framework.js"></script>
 <script>
-	$('.ui.selection.dropdown')
-      .dropdown();
-
     $('.ui.dropdown')
       .dropdown();
 
