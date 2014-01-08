@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>产品管理 | Yeelink用户中心</title>
+    <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
+    <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
+</head>
+<body>
+<div class="page">
+<!--header begin-->
+<header>
+	<div class="bigcontainer">
+		<div id="logo">
+			<a href="./">yeelink用户中心</a>
+		</div>
+		<div class="user">
+			<div class="ui inline labeled icon top right pointing dropdown">
+			<img class="ui avatar image" src="resource/images/avatar-default.gif">
+			欢迎，$用户名
+			<i class="dropdown icon"></i>
+				<div class="menu">
+					<a class="item" href="http://www.yeelink.net"><i class="reply mail icon"></i>返回首页</a>
+					<a class="item" href="/user/logout"><i class="sign out icon"></i>注销登录</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<!-- the main menu-->
+<div class="ui teal inverted menu fluid">
+	<div class="bigcontainer">
+		<div class="right menu">
+			<a class="item" href="./index.html"><i class="home icon"></i>管理首页</a>
+			<a class="item" href="./devices_list.html"><i class="sitemap icon"></i>设备</a>
+			<a class="active item" href="./product_list.html"><i class="cloud icon"></i>产品</a>
+			<a class="item" href="user_profile.html"><i class="info icon"></i>账户</a>
+		</div>
+	</div>
+</div>
+<!--the main content begin-->
+	<div class="container">
+	<!--the content-->
+		<div class="ui grid">
+			<!--the vertical menu-->
+			<div class="four wide column">
+				<div class="verticalMenu">
+					<div class="ui vertical pointing menu fluid">
+  						<a class="item" href="./deploy.html">
+							<i class="rocket icon"></i> 部署新设备
+  						</a>
+  						<a class="active teal item" href="./product_list.html">
+    						<i class="cloud icon"></i> 我的产品
+  						</a>
+  						<a class="item" href="#">
+							<i class="bar chart icon"></i> 产品统计
+  						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="twelve wide column">
+				<div class="pageHeader">
+					<div class="segment">
+						<h3 class="ui dividing header">
+  							<i class="large setting icon"></i>
+  							<div class="content">
+    							产品管理
+    							<div class="sub header">管理这个产品及其批次</div>
+  							</div>
+						</h3>
+					</div>
+				</div>
+                <!--the device info-->
+				<div class="ui device two column middle aligned vertical grid segment">
+                    <div class="column verborder">
+							<div class="ui info segment">
+                                <h5 class="ui header">
+                                    温室自动报警器 <span class="ui type label" title="对整个平台公开产品数据">平台公开</span>
+                                    <div class="sub header">这是一个测试中，还未发布的产品。</div>
+                                </h5>
+                                <p>模板设备： <a class="externalUrl" href="./device.html" title="模板设备">设备01</a></p>
+								<p>已生成： <span class="stress">3</span> 批次</p>
+								<p>已激活： <span class="stress">23 / 50</span>，46.0%</p>
+							</div>
+                    </div>
+  					<div class="center aligned column">
+  							<a class="ui small red button" title="新建批次"><i class="add sign box icon"></i>新建批次</a>
+							<a class="ui small teal button" title="导出全部产品信息"><i class="cloud download icon"></i>导 出</a>
+  							<a class="ui small blue button" title="编辑产品"><i class="edit icon"></i>编 辑</a>
+  					</div>
+				</div>
+
+                <div class="ui vertical segment">
+                    <div class="ui small left icon input">
+                      <input type="text" placeholder="输入序列号或批次...">
+                      <i class="search icon"></i>
+                    </div>
+                        <a class="circular ui mini active button" title="全部">全部</a>
+                        <a class="circular ui mini button" title="已激活">已激活</a>
+                        <a class="circular ui mini button" title="未激活">未激活</a>
+                        <a class="circular ui mini button" title="已冻结">已冻结</a>
+                </div>
+
+                <!--                the produc table-->
+                <table class="ui basic compact table segment">
+                    <thead>
+                        <tr>
+                            <th>序列号</th>
+                            <th>密 钥</th>
+                            <th>批 次</th>
+                            <th>激活状态</th>
+                            <th>操 作</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="positive">
+                          <td>nvju35jful43</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-001</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful44</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-001</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful45</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-001</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful46</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-001</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful47</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-001</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful48</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-001</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful49</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-002</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful50</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-002</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr>
+                          <td>nvju35jful51</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-002</td>
+                          <td><i class="icon close"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful52</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-002</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful53</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-002</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful54</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-002</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful55</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-002</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr class="positive">
+                          <td>nvju35jful56</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-002</td>
+                          <td><i class="icon checkmark"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr><tr>
+                          <td>nvju35jful57</td>
+                          <td>nvju35jful48</td>
+                          <td>L20131205-ylb-002</td>
+                          <td><i class="icon close"></i></td>
+                          <td>
+                            <a class="ui mini basic button">冻 结</a>
+                            <a class="ui mini basic button">删 除</a>
+                          </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="ui pagination menu">
+                <a class="icon item">
+                    <i class="icon left arrow"></i>
+                </a>
+                <a class="active item">
+                    1
+                </a>
+                <div class="disabled item">
+                    ...
+                </div>
+                <a class="item">
+                    4
+                </a>
+                <a class="item">
+                   5
+                </a>
+                <a class="item">
+                    6
+                </a>
+                <a class="icon item">
+                    <i class="icon right arrow"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--footer begin-->
+<footer>
+	<div id="copyrights">
+		<div class="inset">
+			<div class="bigcontainer">
+				<div class="fl">
+					<div class="logo"></div>
+					<p>&copy; 2020 青岛亿联客信息技术有限公司, 版权所有<br />
+<a href="http://www.miibeian.gov.cn" target="_blank">鲁ICP备12022271号</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="resource/javascript/jquery.min.js"></script>
+<script type="text/javascript" src="resource/javascript/framework.js"></script>
+<script>
+    $('.ui.dropdown')
+        .dropdown();
+</script>
+</body>
+</html>
