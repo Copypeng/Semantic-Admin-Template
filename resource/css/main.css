@@ -15,9 +15,6 @@ ul,li{
     margin:0;
     padding:0;
 }
-li.ui.checkbox {
-   margin-right:16px;
-}
 a {
 	text-decoration:none;
 	color:#666;
@@ -30,6 +27,9 @@ a {
 	box-shadow: 0px 4px 15px #181818;
 	padding-bottom:16px;
 	padding-bottom:1rem;
+}
+span.ui.checkbox {
+    padding-right:16px;
 }
 .ui.radio.checkbox{
     margin:16px 16px 8px 0 !important;
