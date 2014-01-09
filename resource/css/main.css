@@ -45,6 +45,13 @@ span.ui.checkbox {
 .ui.warning.message a:hover, .ui.warning.message a:focus {
     text-decoration:underline;
 }
+.ui.feed a{
+	color: #009FDA;
+}
+.ui.feed a:hover,.ui.feed a:focus{
+	color:#00BAFF;
+	text-decoration:underline;
+}
 /*select*/
 select {
   text-transform: none;
@@ -222,7 +229,7 @@ header .user{
     padding:2rem 0 1rem;
     border-bottom:1px solid rgba(0,0,0,.1);
 }
-.ui.device.segment a.externalUrl{
+.ui.device.segment a.externalUrl {
     color:#007ad5;
 }
 .ui.device.segment .sensorAction{
