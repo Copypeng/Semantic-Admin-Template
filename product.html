@@ -16,7 +16,7 @@
 		<div id="logo">
 			<a href="./">yeelink用户中心</a>
 		</div>
-		<div class="user">部署
+		<div class="user">
 			<div class="ui inline labeled icon top right pointing dropdown">
 			<img class="ui avatar image" src="resource/images/avatar-default.gif">
 			欢迎，$用户名
@@ -87,7 +87,7 @@
 							</div>
                     </div>
   					<div class="center aligned column">
-  							<a class="ui small red newbatch button" title="新建批次"><i class="add sign box icon"></i>新建批次</a>
+  							<a class="ui small red button" title="批次" href="./batch.html"><i class="archive icon"></i>批 次</a>
 							<a class="ui small teal button" title="导出全部产品信息"><i class="cloud download icon"></i>导 出</a>
   							<a class="ui small blue button" href="./edit_product.html" title="编辑产品"><i class="edit icon"></i>编 辑</a>
   					</div>
@@ -95,7 +95,7 @@
 
                 <div class="ui vertical segment">
                     <div class="ui small left icon input">
-                      <input type="text" placeholder="输入序列号或批次...">
+                      <input type="text" placeholder="输入序列号...">
                       <i class="search icon"></i>
                     </div>
                         <a class="circular ui mini active button" title="全部">全部</a>
@@ -257,7 +257,7 @@
 
                 <div class="ui pagination menu">
                 <a class="icon item">
-                    <i class="icon left arrow"></i>new
+                    <i class="icon left arrow"></i>
                 </a>
                 <a class="active item">
                     1
@@ -282,42 +282,6 @@
         </div>
     </div>
 </div>
-<!--addNewDIYAction model-->
-	<div class="ui small test newbatch modal">
-		<i class="close icon"></i>
-		<div class="header">
-			新建批次
-		</div>
-		<div class="content">
-                <div class="ui form vertical segment">
-				    <form name="form" method="post">
-                        <div class="field">
-                        	<label>批次号 <small>(自动生成)</small></label>
-                            <div class="ui small left icon input">
-                                <input type="text" readonly value="L20131205-ylb-002">
-                                <i class="ordered list icon"></i>
-                            </div>
-                        </div>
-                        <div class="field">
-                            <label>产品数目</label>
-                            <div class="ui small left icon input">
-                                <input type="number">
-                                <i class="truck icon"></i>
-                            </div>
-                        </div>
-				    </form>
-                </div>
-		</div>
-        <div class="actions">
-            <div class="ui small black button">
-                   取消
-            </div>
-            <div class="ui small positive right labeled icon button">
-                确定
-              <i class="checkmark icon"></i>
-            </div>
-        </div>
-	</div>
 <!--footer begin-->
 <footer>
 	<div id="copyrights">
@@ -337,9 +301,6 @@
 <script>
     $('.ui.dropdown')
         .dropdown();
-
-    $('.test.newbatch.modal')
-		.modal('attach events','.newbatch.button','show');
 </script>
 </body>
 </html>

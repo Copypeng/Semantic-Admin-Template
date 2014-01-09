@@ -1,3 +1,4 @@
+/*framework edit*/
 html{
 	height:100%;
 	font-size:100%;
@@ -19,6 +20,10 @@ a {
 	text-decoration:none;
 	color:#666;
 }
+.ui.dropdown > .text {
+    min-width:150px;
+}
+/*the style begin*/
 .page{
 	min-height:100%;
 	width:100%;
