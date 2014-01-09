@@ -11,8 +11,8 @@ $(document).ready(function() {
     $('.field .ui.image')
         .dimmer({on: 'hover'})
 		.dimmer('setting','duration',{
-            show: 30,
-            hide: 1
+            show: 1,
+            hide: 100
         });
 
 	Gmap();

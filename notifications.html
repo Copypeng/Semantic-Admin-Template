@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <title>账户设置 | Yeelink用户中心</title>
+    <title>消息队列 | Yeelink用户中心</title>
     <link type="text/css" rel="stylesheet" href="resource/css/framework.css" />
     <link type="text/css" rel="stylesheet" href="resource/css/main.css" />
 </head>
@@ -48,7 +48,7 @@
 			<div class="four wide column">
 				<div class="verticalMenu">
 					<div class="ui vertical pointing menu fluid">
-  						<a class="active teal item" href="./user_profile.html">
+  						<a class="item" href="./user_profile.html">
 							<i class="edit icon"></i>账户设置
   						</a>
 						<a class="item" href="./apikey_manage.html">
@@ -57,7 +57,7 @@
   						<a class="item" href="./change_password.html">
     						<i class="lock icon"></i> 修改密码
   						</a>
-						<a class="item" href="./notifications.html">
+						<a class="active teal item" href="./notifications.html">
     						<i class="chat icon"></i> 消息队列
   						</a>
 					</div>
@@ -67,45 +67,15 @@
 				<div class="pageHeader">
 					<div class="segment">
 						<h3 class="ui dividing header">
-  							<i class="large edit icon"></i>
+  							<i class="large chat icon"></i>
   							<div class="content">
-    							账户设置
-    							<div class="sub header">您的个人账户信息</div>
+    							消息队列
+    							<div class="sub header">系统消息以及用户评论</div>
   							</div>
 						</h3>
 					</div>
 				</div>
-				<!--the user_profile form-->
-				<div class="ui form vertical segment">
-					<form action="/ueser/user_profile" name="form" method="post">
-						<div class="two fields">
-							<div class="field">
-								<label>用户名</label>
-								<div class="ui left labeled icon input">
-									<input type="text" id="username" name="username" value="用户名" disabled="disabled">
-									<i class="user icon"></i>
-									<div class="ui corner label">
-									</div>
-								</div>
-							</div>
-                        </div>
-                        <div class="two fields">
-				            <div class="field">
-								<label>电子邮箱</label>
-								<div class="ui left labeled icon input">
-								<input type="text" id="useremail" name="useremail" value="example@yeelink.net">
-								<i class="mail icon"></i>
-								</div>
-				            </div>
-						</div>
-						<div class="field">
-							<label>关 于</label>
-							<textarea></textarea>
-						</div>
-						<input class="ui small blue submit button" type="submit" value="保存">
-						<input class="ui small basic button" type="reset" value="取消">
-					</form>
-				</div>
+				<!--notifications feed-->
 			</div>
 		</div>
 	</div>
