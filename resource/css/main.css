@@ -23,6 +23,19 @@ a {
 .ui.dropdown > .text {
     min-width:150px;
 }
+.ui.notif.menu {
+	box-shadow:none;
+}
+.ui.notif.menu .item {
+	padding:0 10px 0 0;
+	margin-right:16px
+}
+.ui.notif.menu .item:before{
+	display:none;
+}
+.ui.notif.menu .item:hover{
+	color:#666;
+}
 /*the style begin*/
 .page{
 	min-height:100%;
@@ -51,6 +64,9 @@ span.ui.checkbox {
 .ui.feed a:hover,.ui.feed a:focus{
 	color:#00BAFF;
 	text-decoration:underline;
+}
+.ui.table {
+	font-size:14px;
 }
 /*select*/
 select {

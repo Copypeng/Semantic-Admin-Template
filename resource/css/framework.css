@@ -3536,12 +3536,6 @@ body > .ui.grid {
     Positive
 ---------------*/
 
-.ui.table tr.positive,
-.ui.table td.positive {
-  -webkit-box-shadow: 2px 0px 0px #119000 inset;
-  box-shadow: 2px 0px 0px #119000 inset;
-}
-
 .ui.table tr.positive td,
 .ui.table td.positive {
   background-color: #F2F8F0 !important;
@@ -3560,12 +3554,6 @@ body > .ui.grid {
 /*--------------
      Negative
 ---------------*/
-
-.ui.table tr.negative,
-.ui.table td.negative {
-  -webkit-box-shadow: 2px 0px 0px #CD2929 inset;
-  box-shadow: 2px 0px 0px #CD2929 inset;
-}
 
 .ui.table tr.negative td,
 .ui.table td.negative {
